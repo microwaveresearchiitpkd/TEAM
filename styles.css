@@ -108,7 +108,7 @@ body {
 }
 
 .img-fluid {
-    max-width: 100%
+    max-width: 100%;
 }
 
 .container {
@@ -170,7 +170,7 @@ header .logoSection .container .loginLink .btnUserLogin:hover {
 }
 
 .sliderSection .mainSlider .item {
-    position: relative
+    position: relative;
 }
 
 .sliderSection .mainSlider .item .caption {
@@ -191,7 +191,7 @@ header .logoSection .container .loginLink .btnUserLogin:hover {
     font-size: calc(20px + (48 - 29) * (100vw - 320px) / (1920 - 320));
     font-family: "Rubik-Bold";
     width: 42%;
-    color: #fff
+    color: #fff;
 }
 
 .sliderSection .owl-theme .owl-nav.disabled+.owl-dots {
@@ -199,11 +199,11 @@ header .logoSection .container .loginLink .btnUserLogin:hover {
     z-index: 10000;
     position: absolute;
     bottom: 15px;
-    width: 100%
+    width: 100%;
 }
 
 .aboutSection {
-    padding: 70px 0px
+    padding: 70px 0px;
 }
 
 .aboutSection h2 {
@@ -211,7 +211,7 @@ header .logoSection .container .loginLink .btnUserLogin:hover {
     font-family: "Rubik-SemiBold";
     color: #000;
     text-align: center;
-    margin-bottom: 40px
+    margin-bottom: 40px;
 }
 
 .aboutSection .desc {
@@ -223,7 +223,7 @@ header .logoSection .container .loginLink .btnUserLogin:hover {
     grid-gap: 50px;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center
+    align-items: center;
 }
 
 .aboutSection .desc p {
@@ -232,14 +232,14 @@ header .logoSection .container .loginLink .btnUserLogin:hover {
 }
 
 .aboutSection .bottomAction {
-    text-align: center
+    text-align: center;
 }
 
 .aboutSection .bottomAction a {
     text-decoration: none;
     text-transform: uppercase;
     color: #000;
-    font-size: 1.2rem
+    font-size: 1.2rem;
 }
 
 .aboutSection .aboutVideoBox {
