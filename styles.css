@@ -81,22 +81,22 @@ h6 {
     margin-top: 0;
     margin-bottom: 0.5rem;
     font-weight: 500;
-    line-height: 1.2
+    line-height: 1.2;
 }
 
 @font-face {
     font-family: "Rubik-Regular";
-    src: url(../fonts/Rubik-Regular.ttf)
+    src: url(fonts/Rubik-Regular.ttf)
 }
 
 @font-face {
     font-family: "Rubik-Bold";
-    src: url(../fonts/Rubik-Bold.ttf)
+    src: url(fonts/Rubik-Bold.ttf)
 }
 
 @font-face {
     font-family: "Rubik-SemiBold";
-    src: url(../fonts/Rubik-SemiBold.ttf)
+    src: url(fonts/Rubik-SemiBold.ttf)
 }
 
 body {
