@@ -142,6 +142,8 @@ header .logoSection .container {
 header .logoSection .container .epmlText {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
+    max-height: fit-content;
+    max-width: fit-content;
     align-self: center
 }
 
