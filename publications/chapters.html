@@ -582,130 +582,54 @@
         }
     </style>
     <style>
+        /* body {
+            margin: 0;
+            padding: 0;
+        } */
+
         h2 {
-            margin: 2em 0em 2em 3em;
+            margin: 3em 0;
             font-weight: bolder;
+            text-align: center;
         }
 
         h3 {
+            margin: 3em 1em 0;
             text-align: center;
             font-weight: bold;
         }
 
-        .custom-list {
-            counter-reset: custom-counter 41;
-            list-style: none;
+        p {
+            margin: 1em 10em;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            grid-gap: 20px;
+            max-width: 960px;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-align: center;
-            margin-left: 10em;
-            padding-left: 0;
         }
 
-        .custom-list30 {
-            counter-reset: custom-counter 31;
-            list-style: none;
+        .grid-item img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+
+        .grid-item p {
+            margin: 0;
+            padding: 10px;
             text-align: center;
-            margin-left: 10em;
-            padding-left: 0;
-        }
-
-        .custom-list18 {
-            counter-reset: custom-counter 19;
-            list-style: none;
-            text-align: center;
-            margin-left: 10em;
-            padding-left: 0;
-        }
-
-        .custom-list15 {
-            counter-reset: custom-counter 16;
-            list-style: none;
-            text-align: center;
-            margin-left: 10em;
-            padding-left: 0;
-        }
-
-        .custom-list li {
-            margin-bottom: 1em;
-        }
-
-        .custom-list30 li {
-            margin-bottom: 1em;
-        }
-
-        .custom-list18 li {
-            margin-bottom: 1em;
-        }
-
-        .custom-list15 li {
-            margin-bottom: 1em;
-        }
-
-        .custom-list li::before {
-            counter-increment: custom-counter -1;
-            content: "J-"counter(custom-counter) " ";
-            font-weight: bold;
-            margin-right: 0.5em;
-            display: inline-block;
-            width: 2.5em;
-            text-align: right;
-        }
-
-        .custom-list30 li::before {
-            counter-increment: custom-counter -1;
-            content: "J-"counter(custom-counter) " ";
-            font-weight: bold;
-            margin-right: 0.5em;
-            display: inline-block;
-            width: 2.5em;
-            text-align: right;
-        }
-
-        .custom-list18 li::before {
-            counter-increment: custom-counter -1;
-            content: "J-"counter(custom-counter) " ";
-            font-weight: bold;
-            margin-right: 0.5em;
-            display: inline-block;
-            width: 2.5em;
-            text-align: right;
-        }
-
-        .custom-list15 li::before {
-            counter-increment: custom-counter -1;
-            content: "J-"counter(custom-counter) " ";
-            font-weight: bold;
-            margin-right: 0.5em;
-            display: inline-block;
-            width: 2.5em;
-            text-align: right;
-        }
-
-        .custom-list li {
-            width: 85%;
-            margin-left: 2.5em;
-            text-indent: -2.5em;
-            text-align: justify;
-        }
-
-        .custom-list30 li {
-            width: 85%;
-            margin-left: 2.5em;
-            text-indent: -2.5em;
-            text-align: justify;
-        }
-
-        .custom-list18 li {
-            width: 85%;
-            margin-left: 2.5em;
-            text-indent: -2.5em;
-            text-align: justify;
-        }
-
-        .custom-list15 li {
-            width: 85%;
-            margin-left: 2.5em;
-            text-indent: -2.5em;
-            text-align: justify;
         }
     </style>
     <link rel='stylesheet' id='twenty-twenty-one-style-css'
@@ -926,103 +850,27 @@
             <h1 class="page-title">Publication</h1>
         </div>
     </section>
-    <h2>Journal Papers (Oct, 2012 – Present)</h2>
+    <h2>Book</h2>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="../imgs/radfreq.jpg" alt="Image 1">
+            <p>Shiban K Koul and Sukomal Dey, “Radio-Frequency Micromachined Switches, Switching Networks and Phase
+                Shifters”, by CRC Press, Taylor and Francis Group, ISBN NO: 978-0-8153-6143-5. </p>
+        </div>
+        <div class="grid-item">
+            <img src="../imgs/micromachined.JPG" alt="Image 2">
+            <p>Shiban K Koul and Sukomal Dey, “Micromachined Devices and Circuits for Microwave to Sub-millimeter Wave
+                Applications”, by Springer Nature, ID: 702DAE02-3368-42E9-8726-7F9751B12837 </p>
+        </div>
+    </div>
+    <h3>Book Chapter</h3>
+    <p>BC2. Shiban Koul and Sukomal Dey (2014), “RF MEMS Single-Pole-Multi-Throw switching Circuit”, in an Edited book
+        “Micro and Smart Devices and system” eds. K.J.Vinoy, G.K.Ananthasuresh, Rudra Pratap and A.B.Krupanidhi,
+        Springer, New Delhi, ISBN 0-978-81-322-1912-5.</p>
 
-    <h3>2022</h3>
-    <ul class="custom-list">
-        <li>Mohammad Abdul Shukoor, and Sukomal Dey, “Novel Miniaturized, Arrow Linked Figure of Eight Square Loop FSS
-            Based Multiband Linear - Circular and Linear-Cross Reflective Microwave Polarizer”, accepted in
-            International Journal of Microwave and Wireless Technology, on 16th August, 2022.</li>
-        <li>Mohammad Abdul Shukoor, and Sukomal Dey, “Novel Dual-mode Polarization Insensitive Wide Angular Stable
-            Circular Ring Based Deca-band Absorber for RCS and EMI Shielding Applications”, accepted in IEEE
-            Transactions on Electromagnetic Compatibility, on 8th July, 2022.</li>
-        <li>Mohammad Abdul Shukoor, and Sukomal Dey, “Novel Broadband Angular Stable Linear-Circular and Linear-Cross
-            Polarizer Based on Inductive Grid Loaded H-Dipole in Both Reflection and Transmission Modes”, accepted in
-            the Wiley International Journal of RF and Microwave Computer-Aided Engineering, on 30th June, 2022.</li>
-        <li>Mohammad Abdul Shukoor, and Sukomal Dey, “Wideband Dual Polarized Linear-Circular and Linear-Cross Angular
-            Stable THz Reflective Polarizer Based on Modified Square Loop FSS”, accepted in the Applied Optics (OSA,
-            erstwhile Optica), on 28th June, 2022.</li>
-        <li>Mohammad Abdul Shukoor, and Sukomal Dey, “A Novel Broadband Linear-Cross and Linear-Circular Reflective
-            Polarizer based on Interdigital Capacitance Loaded Dipole for RCS Applications”, accepted in the Wiley
-            International Journal of RF and Microwave Computer-Aided Engineering, on 30th April, 2022.</li>
-        <li>Soumik Dey, and Sukomal Dey, “Modified Jersusalem Cross Frequency Selective Surface for Bandstop Spatial
-            Filter, multiband absorption and linear to circular polarization conversion”, accepted in the IEEE
-            Transactions on Electromagnetic Compatibility, on 19th February, 2022.</li>
-        <li>Mohammad Abdul Shukoor, and Sukomal Dey, Broadband Chiral-type Linear to Linear Reflecting Polarizer with
-            Minimal Bandwidth Reduction at Higher Oblique Angles for Satellite Applications”, accepted in the IEEE
-            Transaction on Antenna and Propagation, on 6th Feb, 2022.</li>
-        <li>Mohammad Abdul Shukoor, and Sukomal Dey, “Broadband Polarization Insensitive Wide Angular Stable Dual-split
-            Square Ring CA Absorber for RCS and EMI Shielding Applications”, accepted in Wiley International Journal of
-            RF and Microwave Computer-Aided Engineering, on 12th Jan, 2022.</li>
-        <li>Mohammad Abdul Shukoor, and Sukomal Dey, “A Novel Modified Circular-ring Based Broadband Polarization
-            Insensitive Angular stable Circuit Analog Absorber for RCS Applications”, accepted in EuMA International
-            Journal of Microwave and Wireless Technology, on 26th Jan, 2022.</li>
-        <li>Soumik Dey, and Sukomal Dey, “Second-Order, Single Band and Dual-Band Bandstop Frequency Selective Surfaces
-            at Millimeter Wave Regime”, accepted in IEEE Transaction on Antenna and Propagation, on 7th Jan, 2022.</li>
-    </ul>
-
-    <h3>2021</h3>
-    <ul class="custom-list30">
-        <li>Soumik Dey, and Sukomal Dey, “Broadband High Gain Cavity Resonator Antenna Using Planar Electromagnetic
-            Bandgap Superstrate”, accepted in EuMA International Journal of Microwave and Wireless Technology, on 8th
-            Dec, 2021.</li>
-        <li>Soumik Dey, and Sukomal Dey, “Conformal Multifunction FSS With Enhanced Capacitance Loading for High Angle
-            Stable Stopband Filtering and Microwave Absorption”, accepted in IEEE Transactions on Electromagnetic
-            Compatibility, on 7th Dec, 2021.</li>
-        <li>Soumik Dey, and Sukomal Dey, “Broadband High Gain Cavity Resonator Antenna Using Planar Electromagnetic
-            Bandgap Superstrate”, accepted in EuMA International Journal of Microwave and Wireless Technology, on 22nd
-            Dec, 2021.</li>
-        <li>Soumik Dey, Sukomal Dey, and Shiban K Koul “Isolation Improvement of MIMO Antenna Using Novel EBG and
-            Hair-pin Shaped DGS at 5G Millimeter Wave Band”, accepted in IEEE Access, on 2nd Dec, 2021.</li>
-        <li>Sukomal Dey, Shiban K Koul, Ajay Poddar, and Ulrich Roddhe, "17-30 GHz Reliable and Compact Analog Phase
-            Shifter using Lateral Micromachined SP7T Switches, and DMTL Arrays” in Progress in Electromagnetic Research
-            C, vol. 116, pp157-169, Oct. 2021.</li>
-        <li>Mohammad Abdul Shukoor, and Sukomal Dey, “Compact, Broadband, Wide Angular Stable Circuit Analog Absorber at
-            sub-6 GHz for RCS Reduction”, in Microwave and Optical Technology Letters, vol: 63, no. 12, pp. 2938-2943,
-            Dec 2021.</li>
-        <li>Soumik Dey, and Sukomal Dey, “Miniaturized Dual Stop Band Frequency Selective Surface with Broadband Linear
-            Co to Cross Polarization Conversion Ability”, in Wiley International Journal of RF and Microwave
-            Computer-Aided Engineering, vol: 31, no. 9, Sept, 2021.</li>
-        <li>Mohammad Abdul Shukoor, and Sukomal Dey, “Compact Polarization-insensitive, Wide angular stable Undeca-band
-            Absorber using Circular rings”, in IEEE Transactions on Electromagnetic Compatibility, vol: 63, no. 4, pp.
-            1025 - 1034, Aug 2021.</li>
-        <li>Mohammad Abdul Shukoor, Vivek Kumar and Sukomal Dey, “Compact Angular Stable Triple-band Metamaterial
-            Absorber for RCS Reduction, Sensor and RF Energy Harvesting Applications”, in Wiley International Journal of
-            RF and Microwave Computer-Aided Engineering, vol: 31, no. 9, Sept, 2021.</li>
-        <li>Mohammad Abdul Shukoor, Sukomal Dey, Shiban Koul, Ajay Poddar, and Ulrich Roddhe “Broadband Linear-Cross and
-            Circular-Circular Polarizers with Minimal Bandwidth Reduction at Higher Oblique Angles for RCS
-            Applications”, accepted in Wiley International Journal of RF and Microwave Computer-Aided Engineering, vol:
-            31, no. 7, July 2021.</li>
-        <li>Sukomal Dey, Shiban. K. Koul, Ajay Poddar and Ulrich Rodhe “Frequency and Bandwidth Tunable Reliable MEMS
-            Bandpass Filter for 24 GHz Radar Applications”, in International Journal of RF and Microwave Computer-Aided
-            Engineering, vol. 31, no.6, pp. 1-12, June 2021.</li>
-        <li>Sukomal Dey and Shiban. K. Koul, "Reliable, Compact, and Tunable MEMS Bandpass Filter Using Arrays of Series
-            and Shunt Bridges for 28- GHz 5G Applications", in IEEE Transactions on Microwave Theory and Techniques.
-            vol. 69, no.1, pp. 75-88, Jan 2021.</li>
-    </ul>
-
-    <h3>2020</h3>
-    <ul class="custom-list18">
-        <li>Sukomal Dey, Shiban Koul, Ajay Poddar, and Ulrich Roddhe, “RF MEMS Switches and Phase Shifters for Microwave
-            Applications” in ISSS Journal of Micro and Smart Systems, Springer, vol. 9, no.1, pp. 33-47, Nov 2020.</li>
-        <li>Jyoti Satija, Sukomal Dey, S. Bhattachariya, Gayathri Pillai, and Sheng Shian Li, “A Chip-Scale Frequency
-            Down-Conversion Realized by MEMS-Based Filter and Local Oscillator" accepted in Elsevier Sensors and
-            Actuators: A. Physical, vol. 302, no.1, pp. 1-12, Feb 2020.</li>
-        <li>A. Jaiswal, Sukomal Dey, M. P. Abegaonkar and S. K. Koul, “77 GHz Polarization Agile MEMS Antenna", in Wiley
-            Microwave and Optical Technology Letter, vol. 62, no.6, pp. 1-8, June 2020.</li>
-    </ul>
-
-    <h3>2020</h3>
-    <ul class="custom-list15">
-        <li>Sukomal Dey, Shiban Koul, Ajay Poddar, and Ulrich Roddhe, “RF MEMS Switches and Phase Shifters for Microwave
-            Applications” in ISSS Journal of Micro and Smart Systems, Springer, vol. 9, no.1, pp. 33-47, Nov 2020.</li>
-        <li>Jyoti Satija, Sukomal Dey, S. Bhattachariya, Gayathri Pillai, and Sheng Shian Li, “A Chip-Scale Frequency
-            Down-Conversion Realized by MEMS-Based Filter and Local Oscillator" accepted in Elsevier Sensors and
-            Actuators: A. Physical, vol. 302, no.1, pp. 1-12, Feb 2020.</li>
-        <li>A. Jaiswal, Sukomal Dey, M. P. Abegaonkar and S. K. Koul, “77 GHz Polarization Agile MEMS Antenna", in Wiley
-            Microwave and Optical Technology Letter, vol. 62, no.6, pp. 1-8, June 2020.</li>
-    </ul>
-
+    <p> BC1: Shiban Koul and Sukomal Dey (2014), “RF MEMS True-Time-Delay Phase Shifter”, in an Edited book “Micro and
+        Smart Devices and system” eds. K.J.Vinoy, G.K.Ananthasuresh, Rudra Pratap and A.B.Krupanidhi, Springer, New
+        Delhi, ISBN 0-978-81-322-1912-5.</p>
 
     <footer>
         <div class="container">
