@@ -582,12 +582,21 @@
         }
     </style>
     <style>
-        h2 {
+        ul {
+            padding: 0;
+            /* Remove default padding */
+            margin: 0;
+            /* Remove default margin */
+            list-style: none;
+            /* Remove default list styles */
+        }
+
+        .p-head {
             margin: 2em 0em 2em 3em;
             font-weight: bolder;
         }
 
-        h3 {
+        .p-heading {
             text-align: center;
             font-weight: bold;
         }
@@ -596,7 +605,7 @@
             counter-reset: custom-counter 16;
             list-style: none;
             text-align: center;
-            margin: 0% 7%;
+            /* margin: 0% 7%; */
             padding-left: 0;
         }
 
@@ -616,7 +625,7 @@
 
         .custom-list li {
             /* width: 85%; */
-            margin-left: 2.5em;
+            /* margin-left: 2.5em; */
             text-indent: -3em;
             text-align: justify;
         }
@@ -839,46 +848,60 @@
             <h1 class="page-title">Publications</h1>
         </div>
     </section>
-    <h2>Patents</h2>
-    <ul class="custom-list">
-        <li>Sukomal Dey, Athul O Asok, and Gokul Nath S J, “System and Method for Time-Domain Image Reconstruction to
-            Detect Various Concealed Targets” Application No: 202241036419, filed for Indian Patent on 24th June, 2022.
-        </li>
-        <li>Sukomal Dey, Athul O Asok, and Gokul Nath S J, “A Vivaldi Antenna for Microwave Imaging” Application No:
-            202241038065, filed for Indian Patent on 1st July, 2022.</li>
-        <li>Sukomal Dey, and Mohammad Abdul Shukoor, “Via-less Reconfigurable Polarization Converter Operating in
-            Reflection and Transmission Modes in Different Frequency Bands” Application No: 202241035983, filed for
-            Indian Patent on 23rd June, 2022.</li>
-        <li>Sukomal Dey, Athul O Asok, and Gokul Nath S J, “Method and System for Detecting an Object using Microwave
-            Imaging” Application No: 202241023437, filed for Indian Patent on 21st April, 2022.</li>
-        <li>Shiban K Koul, Sukomal Dey, and Soumik Dey, “A structure of Frequency Selective Surface for Multiband
-            Spatial Filtering and Broadband Polarization Conversion”, Application No: 202111023435, filed for Indian
-            Patent on 26th May, 2021.</li>
-        <li>Shiban K Koul, Sukomal Dey, and Mohammad Abdul Shukoor, “Electromagnetic Energy Absorber” Application No:
-            202111019806, filed for Indian Patent on 30th April, 2021.</li>
-        <li>Shiban K Koul, Ajay Poddar, Sukomal Dey, Ulrich Rodhe “5G MIMO Antenna Array with Reduced Mutual Coupling”,
-            Patent Application No. US 17/197,644, Filed for US patent on 10th March, 2021.</li>
-        <li>Shiban K Koul, Ajay Poddar, Sukomal Dey, Ulrich Rodhe “Planar Multiband Frequency Selective Surfaces with
-            Stable Filter Response”, Patent Application No. US 17/197,612, Filed for US patent on 10th March, 2021.</li>
-        <li>Shiban K Koul, Ajay Poddar, Sukomal Dey, Ulrich Rodhe, “Broadband Metamaterial Enabled Electromagnetic
-            Absorbers and Polarization Converters” Patent Application No. US 17/313,448, Filed for US patent on 6th May,
-            2021.</li>
-        <li>Shiban K Koul, Ajay Poddar, Sukomal Dey, Ulrich Rodhe "Tunable Bandpass Filter For Millimeter-Wave Signals"
-            Patent Application No. US 17/221,920. Filed for US patent on 5th April, 2021.</li>
-        <li>Shiban K Koul, Ajay Poddar, Sukomal Dey, Ulrich Rodhe "Reliable RFMEMS phase shifter" Patent Application No.
-            JP2017126981A, Link: https://patents.google.com/patent/JP2017126981A/ja </li>
-        <li>Shiban K Koul, Ajay Poddar, Sukomal Dey, Ulrich Rodhe "Microwave MEMS phase shifter" Patent Application No.
-            EP3188308B1 Granted) Link: https://patents.google.com/patent/EP3188308B1/en </li>
-        <li>Shiban K Koul, Ajay Poddar, Sukomal Dey, Ulrich Rodhe "High Performance Switch for Microwave MEMS" Patent
-            Application No. EP3188307A1 Link: https://patents.google.com/patent/EP3188307A1/pt </li>
-        <li>Shiban K Koul, Ajay Poddar, Sukomal Dey, Ulrich Rodhe, "Phase shifter comprised of plural coplanar
-            waveguides connected by switches having cantilever beams and mechanical springs" Patent Application No. US
-            10199703 (Granted), Link: http://www.google.com/patents/US20170187086</li>
-        <li>Shiban K Koul, Ajay Poddar, Sukomal Dey, Ulrich Rodhe "High Performance Switch for Microwave MEMS"
-            Application No. US 10325742 (Granted) Link: http://www.google.com/patents/US20170186578</li>
-    </ul>
+    <div class="container">
+        <h2 class="p-head">Patents</h2>
+        <ul class="custom-list">
+            <li>Sukomal Dey, Athul O Asok, and Gokul Nath S J, “System and Method for Time-Domain Image Reconstruction
+                to
+                Detect Various Concealed Targets” Application No: 202241036419, filed for Indian Patent on 24th June,
+                2022.
+            </li>
+            <li>Sukomal Dey, Athul O Asok, and Gokul Nath S J, “A Vivaldi Antenna for Microwave Imaging” Application No:
+                202241038065, filed for Indian Patent on 1st July, 2022.</li>
+            <li>Sukomal Dey, and Mohammad Abdul Shukoor, “Via-less Reconfigurable Polarization Converter Operating in
+                Reflection and Transmission Modes in Different Frequency Bands” Application No: 202241035983, filed for
+                Indian Patent on 23rd June, 2022.</li>
+            <li>Sukomal Dey, Athul O Asok, and Gokul Nath S J, “Method and System for Detecting an Object using
+                Microwave
+                Imaging” Application No: 202241023437, filed for Indian Patent on 21st April, 2022.</li>
+            <li>Shiban K Koul, Sukomal Dey, and Soumik Dey, “A structure of Frequency Selective Surface for Multiband
+                Spatial Filtering and Broadband Polarization Conversion”, Application No: 202111023435, filed for Indian
+                Patent on 26th May, 2021.</li>
+            <li>Shiban K Koul, Sukomal Dey, and Mohammad Abdul Shukoor, “Electromagnetic Energy Absorber” Application
+                No:
+                202111019806, filed for Indian Patent on 30th April, 2021.</li>
+            <li>Shiban K Koul, Ajay Poddar, Sukomal Dey, Ulrich Rodhe “5G MIMO Antenna Array with Reduced Mutual
+                Coupling”,
+                Patent Application No. US 17/197,644, Filed for US patent on 10th March, 2021.</li>
+            <li>Shiban K Koul, Ajay Poddar, Sukomal Dey, Ulrich Rodhe “Planar Multiband Frequency Selective Surfaces
+                with
+                Stable Filter Response”, Patent Application No. US 17/197,612, Filed for US patent on 10th March, 2021.
+            </li>
+            <li>Shiban K Koul, Ajay Poddar, Sukomal Dey, Ulrich Rodhe, “Broadband Metamaterial Enabled Electromagnetic
+                Absorbers and Polarization Converters” Patent Application No. US 17/313,448, Filed for US patent on 6th
+                May,
+                2021.</li>
+            <li>Shiban K Koul, Ajay Poddar, Sukomal Dey, Ulrich Rodhe "Tunable Bandpass Filter For Millimeter-Wave
+                Signals"
+                Patent Application No. US 17/221,920. Filed for US patent on 5th April, 2021.</li>
+            <li>Shiban K Koul, Ajay Poddar, Sukomal Dey, Ulrich Rodhe "Reliable RFMEMS phase shifter" Patent Application
+                No.
+                JP2017126981A, Link: https://patents.google.com/patent/JP2017126981A/ja </li>
+            <li>Shiban K Koul, Ajay Poddar, Sukomal Dey, Ulrich Rodhe "Microwave MEMS phase shifter" Patent Application
+                No.
+                EP3188308B1 Granted) Link: https://patents.google.com/patent/EP3188308B1/en </li>
+            <li>Shiban K Koul, Ajay Poddar, Sukomal Dey, Ulrich Rodhe "High Performance Switch for Microwave MEMS"
+                Patent
+                Application No. EP3188307A1 Link: https://patents.google.com/patent/EP3188307A1/pt </li>
+            <li>Shiban K Koul, Ajay Poddar, Sukomal Dey, Ulrich Rodhe, "Phase shifter comprised of plural coplanar
+                waveguides connected by switches having cantilever beams and mechanical springs" Patent Application No.
+                US
+                10199703 (Granted), Link: http://www.google.com/patents/US20170187086</li>
+            <li>Shiban K Koul, Ajay Poddar, Sukomal Dey, Ulrich Rodhe "High Performance Switch for Microwave MEMS"
+                Application No. US 10325742 (Granted) Link: http://www.google.com/patents/US20170186578</li>
+        </ul>
 
-
+    </div>
     <footer>
         <div class="container">
             <div class="item">
