@@ -592,32 +592,48 @@
             font-weight: bold;
         }
 
-        .custom-list {
-            counter-reset: custom-counter 64;
+        .list {
+            counter-reset: list-counter 64;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            justify-content: flex-start;
             list-style: none;
-            text-align: center;
-            padding-left: 0;
+            padding: 0;
+            margin: 1rem 0;
         }
 
-        .custom-list li {
-            margin-bottom: 1em;
+        .list li {
+            flex-basis: calc(99% / 3);
+            color: #555;
+            font-size: 1.00rem;
+            padding: 10px;
+            box-sizing: border-box;
+            box-shadow: 2px 6px 8px 0px rgba(22, 22, 26, 0.18);
+            border-radius: 10px;
+            text-align: left;
         }
 
-        .custom-list li::before {
-            counter-increment: custom-counter -1;
-            content: "J-"counter(custom-counter) " ";
+        .list li::before {
+            counter-increment: list-counter -1;
+            content: "J-"counter(list-counter);
+            font-size: 1.3rem;
+            color: darkblue;
+            display: block;
             font-weight: bold;
-            margin-right: 0.5em;
-            display: inline-block;
-            width: 2.5em;
-            text-align: right;
+            margin-bottom: 5px;
         }
 
-        .custom-list li {
-            width: 85%;
-            margin-left: 2.5em;
-            text-indent: -2.5em;
-            text-align: justify;
+        @media screen and (max-width: 768px) {
+            .list li {
+                flex-basis: 50%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .list li {
+                flex-basis: 100%;
+            }
         }
     </style>
     <link rel='stylesheet' id='twenty-twenty-one-style-css'
@@ -842,7 +858,7 @@
         <h2 class="book-head">Conference Papers (Oct, 2009 – Present)</h2>
 
         <h3 class="book-heading">2020</h3>
-        <ul class="custom-list">
+        <ul class=" list">
             <li>Meghana, Tarun, Dheeraj, Priyadarshini, Mohammad Abdul Shukoor, and Sukomal Dey, “A Novel Modified
                 H-shaped
                 Linear-Cross Reflective Type Polarization Converter at THz Regime”, accepted in Proc. of IEEE Wireless,

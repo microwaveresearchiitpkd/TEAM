@@ -582,15 +582,6 @@
         }
     </style>
     <style>
-        ul {
-            padding: 0;
-            /* Remove default padding */
-            margin: 0;
-            /* Remove default margin */
-            list-style: none;
-            /* Remove default list styles */
-        }
-
         .p-head {
             margin: 2em 0em 2em 3em;
             font-weight: bolder;
@@ -601,33 +592,58 @@
             font-weight: bold;
         }
 
+        .list-link {
+            text-decoration: none;
+            color: rgb(255, 153, 0);
+        }
+
+        .list-link:hover {
+            text-decoration: none;
+            color: red;
+        }
+
         .custom-list {
-            counter-reset: custom-counter 16;
+            counter-reset: list-counter 64;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            justify-content: flex-start;
             list-style: none;
-            text-align: center;
-            /* margin: 0% 7%; */
-            padding-left: 0;
+            padding: 0;
+            margin: 1rem 0;
         }
 
         .custom-list li {
-            margin-bottom: 1em;
+            flex-basis: calc(99% / 3);
+            font-size: 1.00rem;
+            color: #555;
+            padding: 10px;
+            box-sizing: border-box;
+            box-shadow: 2px 6px 8px 0px rgba(22, 22, 26, 0.18);
+            border-radius: 10px;
+            text-align: left;
         }
 
         .custom-list li::before {
-            counter-increment: custom-counter -1;
-            content: "J-"counter(custom-counter) " ";
+            counter-increment: list-counter -1;
+            content: "P-"counter(list-counter);
+            color: darkblue;
+            font-size: 1.3rem;
+            display: block;
             font-weight: bold;
-            margin-right: 0.5em;
-            display: inline-block;
-            width: 2.5em;
-            text-align: right;
+            margin-bottom: 5px;
         }
 
-        .custom-list li {
-            /* width: 85%; */
-            /* margin-left: 2.5em; */
-            text-indent: -3em;
-            text-align: justify;
+        @media screen and (max-width: 768px) {
+            .custom-list li {
+                flex-basis: 50%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .custom-list li {
+                flex-basis: 100%;
+            }
         }
     </style>
     <link rel='stylesheet' id='twenty-twenty-one-style-css'
@@ -886,19 +902,25 @@
                 Patent Application No. US 17/221,920. Filed for US patent on 5th April, 2021.</li>
             <li>Shiban K Koul, Ajay Poddar, Sukomal Dey, Ulrich Rodhe "Reliable RFMEMS phase shifter" Patent Application
                 No.
-                JP2017126981A, Link: https://patents.google.com/patent/JP2017126981A/ja </li>
+                JP2017126981A, Link: <a class="list-link"
+                    href="https://patents.google.com/patent/JP2017126981A/ja">Patent</a></li>
             <li>Shiban K Koul, Ajay Poddar, Sukomal Dey, Ulrich Rodhe "Microwave MEMS phase shifter" Patent Application
                 No.
-                EP3188308B1 Granted) Link: https://patents.google.com/patent/EP3188308B1/en </li>
+                EP3188308B1 Granted) Link: <a class="list-link"
+                    href="https://patents.google.com/patent/EP3188308B1/en">Patent</a></li>
             <li>Shiban K Koul, Ajay Poddar, Sukomal Dey, Ulrich Rodhe "High Performance Switch for Microwave MEMS"
                 Patent
-                Application No. EP3188307A1 Link: https://patents.google.com/patent/EP3188307A1/pt </li>
+                Application No. EP3188307A1 Link: <a class="list-link"
+                    href="https://patents.google.com/patent/EP3188307A1/pt">Patent</a>
+            </li>
             <li>Shiban K Koul, Ajay Poddar, Sukomal Dey, Ulrich Rodhe, "Phase shifter comprised of plural coplanar
                 waveguides connected by switches having cantilever beams and mechanical springs" Patent Application No.
                 US
-                10199703 (Granted), Link: http://www.google.com/patents/US20170187086</li>
+                10199703 (Granted), Link: <a class="list-link"
+                    href="http://www.google.com/patents/US20170187086">Patent</a></li>
             <li>Shiban K Koul, Ajay Poddar, Sukomal Dey, Ulrich Rodhe "High Performance Switch for Microwave MEMS"
-                Application No. US 10325742 (Granted) Link: http://www.google.com/patents/US20170186578</li>
+                Application No. US 10325742 (Granted) Link: <a class="list-link"
+                    href="http://www.google.com/patents/US20170186578">Patent</a></li>
         </ul>
 
     </div>

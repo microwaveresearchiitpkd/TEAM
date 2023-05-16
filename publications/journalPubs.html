@@ -588,155 +588,273 @@
         }
 
         .j-heading {
+            margin: 2rem 0;
             text-align: center;
             font-weight: bold;
+        }
+
+        .custom-list40 {
+            counter-reset: list-counter 41;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            justify-content: flex-start;
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+
+        .custom-list40 li {
+            flex-basis: calc(99% / 3);
+            font-size: 1.00rem;
+            color: #555;
+            padding: 10px;
+            box-sizing: border-box;
+            box-shadow: 2px 6px 8px 0px rgba(22, 22, 26, 0.18);
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .custom-list40 li::before {
+            counter-increment: list-counter -1;
+            content: "P-"counter(list-counter);
+            color: darkblue;
+            font-size: 1.3rem;
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .custom-list40 li {
+                flex-basis: 50%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .custom-list40 li {
+                flex-basis: 100%;
+            }
         }
 
         .custom-list {
-            counter-reset: custom-counter 41;
+            counter-reset: list-counter 64;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            justify-content: flex-start;
             list-style: none;
-            text-align: center;
-            /* margin-left: 10em; */
-            padding-left: 0;
+            padding: 0;
+            margin: 1rem 0;
+        }
+
+        .custom-list li {
+            flex-basis: calc(99% / 3);
+            font-size: 1.00rem;
+            color: #555;
+            padding: 10px;
+            box-sizing: border-box;
+            box-shadow: 2px 6px 8px 0px rgba(22, 22, 26, 0.18);
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .custom-list li::before {
+            counter-increment: list-counter -1;
+            content: "P-"counter(list-counter);
+            color: darkblue;
+            font-size: 1.3rem;
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .custom-list li {
+                flex-basis: 50%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .custom-list li {
+                flex-basis: 100%;
+            }
         }
 
         .custom-list30 {
-            counter-reset: custom-counter 31;
+            counter-reset: list-counter 31;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            justify-content: flex-start;
             list-style: none;
-            text-align: center;
-            /* margin-left: 10em; */
-            padding-left: 0;
-        }
-
-        .custom-list18 {
-            counter-reset: custom-counter 19;
-            list-style: none;
-            text-align: center;
-            /* margin-left: 10em; */
-            padding-left: 0;
-        }
-
-        .custom-list15 {
-            counter-reset: custom-counter 16;
-            list-style: none;
-            text-align: center;
-            /* margin-left: 10em; */
-            padding-left: 0;
-        }
-
-        .custom-list12 {
-            counter-reset: custom-counter 13;
-            list-style: none;
-            text-align: center;
-            /* margin-left: 10em; */
-            padding-left: 0;
-        }
-
-
-        .custom-list li {
-            margin-bottom: 1em;
+            padding: 0;
+            margin: 1rem 0;
         }
 
         .custom-list30 li {
-            margin-bottom: 1em;
-        }
-
-        .custom-list18 li {
-            margin-bottom: 1em;
-        }
-
-        .custom-list15 li {
-            margin-bottom: 1em;
-        }
-
-        .custom-list12 li {
-            margin-bottom: 1em;
-        }
-
-
-        .custom-list li::before {
-            counter-increment: custom-counter -1;
-            content: "J-"counter(custom-counter) " ";
-            font-weight: bold;
-            margin-right: 0.5em;
-            display: inline-block;
-            width: 2.5em;
-            text-align: right;
+            flex-basis: calc(99% / 3);
+            font-size: 1.00rem;
+            color: #555;
+            padding: 10px;
+            box-sizing: border-box;
+            box-shadow: 2px 6px 8px 0px rgba(22, 22, 26, 0.18);
+            border-radius: 10px;
+            text-align: left;
         }
 
         .custom-list30 li::before {
-            counter-increment: custom-counter -1;
-            content: "J-"counter(custom-counter) " ";
+            counter-increment: list-counter -1;
+            content: "P-"counter(list-counter);
+            color: darkblue;
+            font-size: 1.3rem;
+            display: block;
             font-weight: bold;
-            margin-right: 0.5em;
-            display: inline-block;
-            width: 2.5em;
-            text-align: right;
+            margin-bottom: 5px;
         }
 
-        .custom-list18 li::before {
-            counter-increment: custom-counter -1;
-            content: "J-"counter(custom-counter) " ";
-            font-weight: bold;
-            margin-right: 0.5em;
-            display: inline-block;
-            width: 2.5em;
-            text-align: right;
+        @media screen and (max-width: 768px) {
+            .custom-list30 li {
+                flex-basis: 50%;
+            }
         }
 
-        .custom-list15 li::before {
-            counter-increment: custom-counter -1;
-            content: "J-"counter(custom-counter) " ";
-            font-weight: bold;
-            margin-right: 0.5em;
-            display: inline-block;
-            width: 2.5em;
-            text-align: right;
+        @media screen and (max-width: 480px) {
+            .custom-list30 li {
+                flex-basis: 100%;
+            }
         }
 
-        .custom-list12 li::before {
-            counter-increment: custom-counter -1;
-            content: "J-"counter(custom-counter) " ";
-            font-weight: bold;
-            margin-right: 0.5em;
-            display: inline-block;
-            width: 2.5em;
-            text-align: right;
-        }
-
-        .custom-list li {
-            width: 85%;
-            margin-left: 2.5em;
-            text-indent: -2.5em;
-            text-align: justify;
-        }
-
-        .custom-list30 li {
-            width: 85%;
-            margin-left: 2.5em;
-            text-indent: -2.5em;
-            text-align: justify;
+        .custom-list18 {
+            counter-reset: list-counter 19;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            justify-content: flex-start;
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
         }
 
         .custom-list18 li {
-            width: 85%;
-            margin-left: 2.5em;
-            text-indent: -2.5em;
-            text-align: justify;
+            flex-basis: calc(99% / 3);
+            font-size: 1.00rem;
+            color: #555;
+            padding: 10px;
+            box-sizing: border-box;
+            box-shadow: 2px 6px 8px 0px rgba(22, 22, 26, 0.18);
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .custom-list18 li::before {
+            counter-increment: list-counter -1;
+            content: "P-"counter(list-counter);
+            color: darkblue;
+            font-size: 1.3rem;
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .custom-list18 li {
+                flex-basis: 50%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .custom-list18 li {
+                flex-basis: 100%;
+            }
+        }
+
+        .custom-list15 {
+            counter-reset: list-counter 16;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            justify-content: flex-start;
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
         }
 
         .custom-list15 li {
-            width: 85%;
-            margin-left: 2.5em;
-            text-indent: -2.5em;
-            text-align: justify;
+            flex-basis: calc(99% / 3);
+            font-size: 1.00rem;
+            color: #555;
+            padding: 10px;
+            box-sizing: border-box;
+            box-shadow: 2px 6px 8px 0px rgba(22, 22, 26, 0.18);
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .custom-list15 li::before {
+            counter-increment: list-counter -1;
+            content: "P-"counter(list-counter);
+            color: darkblue;
+            font-size: 1.3rem;
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .custom-list15 li {
+                flex-basis: 50%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .custom-list15 li {
+                flex-basis: 100%;
+            }
+        }
+
+        .custom-list12 {
+            counter-reset: list-counter 13;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            justify-content: flex-start;
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
         }
 
         .custom-list12 li {
-            width: 85%;
-            margin-left: 2.5em;
-            text-indent: -2.5em;
-            text-align: justify;
+            flex-basis: calc(99% / 3);
+            font-size: 1.00rem;
+            color: #555;
+            padding: 10px;
+            box-sizing: border-box;
+            box-shadow: 2px 6px 8px 0px rgba(22, 22, 26, 0.18);
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .custom-list12 li::before {
+            counter-increment: list-counter -1;
+            content: "P-"counter(list-counter);
+            color: darkblue;
+            font-size: 1.3rem;
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .custom-list12 li {
+                flex-basis: 50%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .custom-list12 li {
+                flex-basis: 100%;
+            }
         }
     </style>
     <link rel='stylesheet' id='twenty-twenty-one-style-css'
@@ -961,7 +1079,7 @@
         <h2 class="j-head">Journal Papers (Oct, 2012 – Present)</h2>
 
         <h3 class="j-heading">2022</h3>
-        <ul class="custom-list">
+        <ul class="custom-list40">
             <li>Mohammad Abdul Shukoor, and Sukomal Dey, “Novel Miniaturized, Arrow Linked Figure of Eight Square Loop
                 FSS
                 Based Multiband Linear - Circular and Linear-Cross Reflective Microwave Polarizer”, accepted in
@@ -1002,7 +1120,7 @@
             </li>
         </ul>
 
-        <h3>2021</h3>
+        <h3 class="j-heading">2021</h3>
         <ul class="custom-list30">
             <li>Soumik Dey, and Sukomal Dey, “Broadband High Gain Cavity Resonator Antenna Using Planar Electromagnetic
                 Bandgap Superstrate”, accepted in EuMA International Journal of Microwave and Wireless Technology, on
@@ -1057,7 +1175,7 @@
                 vol. 69, no.1, pp. 75-88, Jan 2021.</li>
         </ul>
 
-        <h3>2020</h3>
+        <h3 class="j-heading">2020</h3>
         <ul class="custom-list18">
             <li>Sukomal Dey, Shiban Koul, Ajay Poddar, and Ulrich Roddhe, “RF MEMS Switches and Phase Shifters for
                 Microwave
@@ -1074,7 +1192,7 @@
 
 
 
-        <h3>2019 - 2012</h3>
+        <h3 class="j-heading">2019 - 2012</h3>
         <ul class="custom-list15">
             <li>Sukomal Dey, Shiban Koul, Ajay Poddar, and Ulrich Roddhe, "Compact, broadband and reliable lateral MEMS
                 switching networks for 5G communications” in Progress in Electromagnetic Research M, vol. 86, pp163-171,
