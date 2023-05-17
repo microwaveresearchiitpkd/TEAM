@@ -854,14 +854,17 @@ footer .container .item:nth-child(3) .footerLink ul li a {
 }
 
 .insideBanner {
-    padding: 120px 0px;
-    background-image: url(imgs/banner.jpg)
+    padding: 90px 0px;
 }
 
 .insideBanner h1 {
-    color: #fff;
-    font-family: "Rubik-SemiBold";
-    font-size: 3rem
+    color: rgb(61, 59, 59);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 5rem;
+    text-align: center;   
+    text-decoration: underline rgb(255, 225, 0) 1rem;
+    text-underline-offset: 20px;
+    text-transform: uppercase;
 }
 
 .insideBodyContent {
@@ -1205,16 +1208,16 @@ tr {
     display: grid;
     /* -ms-grid-columns: (1fr)[4]; */
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 15px;
+    grid-gap: 25px;
     font-size: 0.9rem
 }
 
 .insideMemberStaff .mitem {
-    background-color: #ebe7e7;
+    background-color: white;
     border-radius: 10px;
     padding: 15px;
     -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05)
+    box-shadow: 2px 6px 8px 0px rgba(22, 22, 26, 0.18);
 }
 
 .insideMemberStaff .mitem .imgBox {
