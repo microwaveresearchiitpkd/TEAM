@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <!-- <link rel="stylesheet" href="customeStylemin.css"> -->
     <!-- <link rel="stylesheet" href="owl.carousel.min.css"> -->
     <!-- <link rel="stylesheet" href="owl.theme.default.min.css"> -->
@@ -17,7 +17,7 @@
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="../../menuStyle.css">
+    <link rel="stylesheet" href="../menuStyle.css">
     <title>Sukomal Dey</title>
     <meta name='robots' content='max-image-preview:large' />
     <link rel="alternate" type="application/rss+xml" title="Santanu Kapat &raquo; Feed"
@@ -583,25 +583,44 @@
     </style>
     <style>
         .insideBanner {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../imgs/students/banner/ban.jpg);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imgs/research/banner.jpg);
         }
 
         .insideBanner h1 {
             color: rgb(234, 229, 229);
         }
 
-        hr {
-            margin-top: 0.5rem;
-            position: relative;
-            border: none;
-            height: 2px;
-            background: rgb(255, 225, 0);
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
 
+        .grid-item {
+            width: 100%;
+            height: auto;
+        }
+
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .caption {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
     <link rel='stylesheet' id='twenty-twenty-one-style-css'
         href='http://www.facweb.iitkgp.ac.in/~skapat/wp-content/themes/sk/style.css?ver=6.1.1' media='all' />
-    <link rel='stylesheet' id='twenty-twenty-one-print-style-css' href='../../assets/css/print.css?ver=6.1.1'
+    <link rel='stylesheet' id='twenty-twenty-one-print-style-css' href='../assets/css/print.css?ver=6.1.1'
         media='print' />
     <link rel="EditURI" type="application/rsd+xml" title="RSD"
         href="http://www.facweb.iitkgp.ac.in/~skapat/xmlrpc.php?rsd" />
@@ -617,12 +636,12 @@
         <section class="logoSection">
             <div class="container">
                 <div class="kgpLogo">
-                    <a href="../../index.html"><img src="../../imgs/logo.png" class="img-fluid" alt=""></a>
+                    <a href="../index.html"><img src="../imgs/logo.png" class="img-fluid" alt=""></a>
                 </div>
                 <div class="epmlLogo">
-                    <a href="../../index.html"><img src="../../imgs/pkdlogo.png" class="img-fluid" alt=""></a> </div>
+                    <a href="../index.html"><img src="../imgs/pkdlogo.png" class="img-fluid" alt=""></a> </div>
                 <div class="epmlText">
-                    <img src="../../imgs/header.png" class="img-fluid" alt=""> </div>
+                    <img src="../imgs/header.png" class="img-fluid" alt=""> </div>
             </div>
         </section>
         <nav>
@@ -631,10 +650,10 @@
                     <ul id="mainmenu" class="top-main-menu">
                         <li id="menu-item-14"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item menu-item-14">
-                            <a href="../../index.html" aria-current="page">Home</a></li>
+                            <a href="../index.html" aria-current="page">Home</a></li>
                         <li id="menu-item-14"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item menu-item-14">
-                            <a href="../../aboutme.html" aria-current="page">About Me</a></li>
+                            <a href="../aboutme.html" aria-current="page">About Me</a></li>
                         <li id="menu-item-217"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-217">
                             <a href="#">Students</a><button class="sub-menu-toggle" aria-expanded="false"
@@ -654,38 +673,38 @@
                             <ul class="sub-menu">
                                 <li id="menu-item-736"
                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-736">
-                                    <a href="../ongoing.html">Ongoing
+                                    <a href="../students/aongoing.html">Ongoing
                                         Students</a>
                                     <ul class="sub-menu">
                                         <li id="menu-item-1012"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1012">
-                                            <a href="fellows.html">Research
+                                            <a href="../students/aongoing/fellows.html">Research
                                                 Fellows</a></li>
                                         <li id="menu-item-1011"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1011">
-                                            <a href="scholars.html">Research
+                                            <a href="../students/aongoing/scholars.html">Research
                                                 Scholars</a></li>
                                         <li id="menu-item-1010"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1010">
-                                            <a href="ugpg.html">UG/PG</a>
+                                            <a href="../students/aongoing/ugpg.html">UG/PG</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li id="menu-item-739"
                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-739">
-                                    <a href="../alumini.html">Alumni</a>
+                                    <a href="../students/alumini.html">Alumni</a>
                                     <ul class="sub-menu">
                                         <li id="menu-item-1003"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1003">
-                                            <a href="../Alumini/ms.html">MS</a>
+                                            <a href="../students/aAlumini/ms.html">MS</a>
                                         </li>
                                         <li id="menu-item-1002"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1002">
-                                            <a href="../Alumini/phd.html">Ph.D.</a>
+                                            <a href="../students/aAlumini/phd.html">Ph.D.</a>
                                         </li>
                                         <li id="menu-item-1001"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001">
-                                            <a href="../Alumini/ugpg.html">UG/PG</a>
+                                            <a href="../students/aAlumini/ugpg.html">UG/PG</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -757,19 +776,19 @@
                             <ul class="sub-menu">
                                 <li id="menu-item-250"
                                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-250">
-                                    <a href="../../publications/chapters.html">Book
+                                    <a href="chapters.html">Book
                                         chapters</a></li>
                                 <li id="menu-item-248"
                                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-248">
-                                    <a href="../../publications/conferencePubs.html">Conference
+                                    <a href="conferencePubs.html">Conference
                                         publications</a></li>
                                 <li id="menu-item-247"
                                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-247">
-                                    <a href="../../publications/journalPubs.html">Journal
+                                    <a href="journalPubs.html">Journal
                                         publications</a></li>
                                 <li id="menu-item-249"
                                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-249">
-                                    <a href="../../publications/patent.html">Patent
+                                    <a href="patent.html">Patent
                                         filing</a></li>
                             </ul>
                         </li>
@@ -802,83 +821,61 @@
                         </li> -->
                         <li id="menu-item-222"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-222"><a
-                                href="../../news/news.html">News</a></li>
+                                href="../news/news.html">News</a></li>
                         <li id="menu-item-223"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-223"><a
-                                href="../../eventstab/events.html">Events</a></li>
+                                href="../eventstab/events.html">Events</a></li>
                         <li id="menu-item-594"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-594"><a
-                                href="../../contact/contact.html">CONTACT Me</a></li>
+                                href="../contact/contact.html">CONTACT Me</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
     <section class="insideBanner">
         <div class="container">
-            <h1>UG/PG</h1>
+            <h1 class="page-title">Frequency Selective Surfaces</h1>
         </div>
     </section>
-    <article class="insideBodyContent">
-        <div class="container">
-            <article id="post-737" class="post-737 page type-page status-publish hentry entry">
-                <div class="entry-content">
-                    <h2>B.Tech Students</h2>
-                    <hr>
-                    <div class="insideMemberStaff">
-                        <div class="mitem">
-                            <div class="imgBox">
-                                <img src="../../imgs/students/suraj.jpg" alt="Suraj Chauhan" class="img-fluid" />
-                            </div>
-                            <h5>Suraj Chauhan</h5>
-                            Working on :
-
-                            Antenna for Imaging Applications.
-                        </div>
-                        <div class="mitem">
-                            <div class="imgBox">
-                                <img src="../../imgs/students/ayush.jpg" alt="Ayush Tripathi" class="img-fluid" />
-                            </div>
-                            <h5>Ayush Tripathi</h5>
-                            Working on :
-
-                            Microwave Imaging Algorithms
-                        </div>
-                        <div class="mitem">
-                            <div class="imgBox">
-                                <img src="../../imgs/students/mannam.jpg" alt="Mannam Sree Keerthi" class="img-fluid" />
-                            </div>
-                            <h5>Mannam Sree Keerthi</h5>
-                            Working on :
-
-                            Phased Array System
-                        </div>
-                        <div class="mitem">
-                            <div class="imgBox">
-                                <img src="../../imgs/students/rama.jpg" alt="N. Rama Priya Darsini" class="img-fluid" />
-                            </div>
-                            <h5>N. Rama Priya Darsini</h5>
-                            Working on :
-
-                            Reconfigurable Intelligent Surfaces
-                        </div>
-
-                    </div>
-
-
+    <div class="container">
+        <section>
+            <h2>Multiband FSS</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="../imgs/research/fss/image1.jpg" alt="Image 1" class="grid-image">
+                    <div class="caption">TRIBAND BAND STOP FSS ON SINGLE LAYER</div>
                 </div>
-        </div>
-        <!-- .entry-content -->
-    </article>
-    <!-- #post-737 -->
+            </div>
+        </section>
+
+        <section>
+            <h2>High Order FSS</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="../imgs/research/fss/image3.jpg" alt="Image 1">
+                    <div class="caption">SINGLE AND DUAL BAND SECOND ORDER FSS</div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Multifunctional FSS</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="../imgs/research/fss/image4.jpg" alt="Image 2">
+                    <div class="caption">FSS AS SPATIAL FILTERING, POLARIZATION CONVERSION AND MICROWAVE ABSORPTION
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-    </article>
-
-
     <footer>
         <div class="container">
             <div class="item">
-                <img class="img-fluid" src="../../imgs/logo.png" alt="" />
+                <img class="img-fluid" src="../imgs/logo.png" alt="" />
                 <h3>Advanced EM & Antenna Research Group</h3>
                 <h5>Indian Institute of Technology Palakkad</h5>
             </div>
@@ -920,6 +917,7 @@
                     alt="" />
             </div>
         </div>
+
     </footer>
     <script>
         document.body.classList.remove("no-js");
@@ -935,9 +933,9 @@
             '<script src="assets/js/polyfills.js"></scr' +
             'ipt>');
     </script>
-    <script src='../../assets/js/primary-navigation.js?ver=6.1.1' id='twenty-twenty-one-primary-navigation-script-js'>
+    <script src='../assets/js/primary-navigation.js?ver=6.1.1' id='twenty-twenty-one-primary-navigation-script-js'>
     </script>
-    <script src='../../assets/js/responsive-embeds.js?ver=6.1.1' id='twenty-twenty-one-responsive-embeds-script-js'>
+    <script src='../assets/js/responsive-embeds.js?ver=6.1.1' id='twenty-twenty-one-responsive-embeds-script-js'>
     </script>
     <script>
         /(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window
@@ -958,10 +956,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
-    <script src="../../tabsScript.js">
+    <script src="../tabsScript.js">
     </script>
-    <script src="../../menuScript.js"></script>
-    <script src="../../customScript.js">
+    <script src="../menuScript.js"></script>
+    <script src="../customScript.js">
     </script>
 </body>
 
