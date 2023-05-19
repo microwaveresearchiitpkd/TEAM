@@ -870,28 +870,37 @@ footer .container .item:nth-child(3) .footerLink ul li a {
     text-decoration: underline rgb(255, 225, 0) 0.8rem;
     text-underline-offset: 20px;
     text-transform: uppercase;
-    margin-bottom: 1rem;
+
 }
 @media screen and (max-width: 1000px) {
     .insideBanner h1 {
-        font-size: 3rem; /* Adjust font size for smaller screens */
+        font-size: 3rem; 
         text-decoration: underline rgb(255, 225, 0) 0.6rem;
     }
   }
   @media screen and (max-width: 740px) {
     .insideBanner h1 {
-        font-size: 2rem; /* Adjust font size for smaller screens */
-        text-decoration: underline rgb(255, 225, 0) 0.6rem;
+        font-size: 2rem; 
+        text-decoration: underline rgb(255, 225, 0) 0.4rem;
     }
   }
 @media screen and (max-width: 502px) {
     .insideBanner h1 {
-        font-size: 1.5rem; /* Adjust font size for even smaller screens */
+        font-size: 1.5rem; 
+        text-decoration: underline rgb(255, 225, 0) 0.3rem;
     }
 }
 @media screen and (max-width: 380px) {
     .insideBanner h1 {
-        font-size: 1.45rem; /* Adjust font size for even smaller screens */
+        font-size: 1.4rem; 
+        text-decoration: underline rgb(255, 225, 0) 0.28rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .insideBanner h1 {
+        font-size: 1rem; 
+        text-decoration: underline rgb(255, 225, 0) 0.2rem;
     }
 }
 .insideBodyContent {
