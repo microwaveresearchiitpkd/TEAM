@@ -863,15 +863,37 @@ footer .container .item:nth-child(3) .footerLink ul li a {
 }
 
 .insideBanner h1 {
-    color: rgb(61, 59, 59);
+    color: rgb(57, 57, 57);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;   
-    text-decoration: underline rgb(255, 225, 0) 1rem;
+    text-decoration: underline rgb(255, 225, 0) 0.8rem;
     text-underline-offset: 20px;
     text-transform: uppercase;
+    margin-bottom: 1rem;
 }
-
+@media screen and (max-width: 1000px) {
+    .insideBanner h1 {
+        font-size: 3rem; /* Adjust font size for smaller screens */
+        text-decoration: underline rgb(255, 225, 0) 0.6rem;
+    }
+  }
+  @media screen and (max-width: 740px) {
+    .insideBanner h1 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+        text-decoration: underline rgb(255, 225, 0) 0.6rem;
+    }
+  }
+@media screen and (max-width: 502px) {
+    .insideBanner h1 {
+        font-size: 1.5rem; /* Adjust font size for even smaller screens */
+    }
+}
+@media screen and (max-width: 380px) {
+    .insideBanner h1 {
+        font-size: 1.45rem; /* Adjust font size for even smaller screens */
+    }
+}
 .insideBodyContent {
     padding: 40px 0px
 }
