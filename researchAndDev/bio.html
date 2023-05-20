@@ -615,21 +615,67 @@
             }
         }
 
+        .bodyhead {
+            font-size: 2rem;
+            margin: 2rem 0rem;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: bold;
+            color: #323232;
+        }
+
+        .polarimg {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        .para {
+            line-height: 35px;
+        }
 
         .grid-item {
             width: 100%;
             height: auto;
             margin-bottom: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
         }
 
         .grid-item img {
             max-width: 100%;
             height: auto;
             margin-bottom: 1rem;
+
+        }
+
+        .desc {
+            /* margin-bottom: 40px; */
+            display: -ms-grid;
+            display: grid;
+            /* -ms-grid-columns: (1fr)[2]; */
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 50px;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .item2 {
+            margin-bottom: 0px;
+        }
+
+        .imgsec {
+            display: flex;
+            justify-content: center;
+
         }
 
         .caption {
-            font-size: 20px;
+            font-size: smaller;
             text-align: center;
 
         }
@@ -638,6 +684,20 @@
             .grid {
                 grid-template-columns: 1fr;
             }
+        }
+
+        hr {
+            margin: 1rem 0rem;
+            position: relative;
+            border: none;
+            height: 2px;
+            background: rgb(255, 225, 0);
+
+        }
+
+        .selectpub-item {
+            list-style: none;
+            margin-bottom: 1rem;
         }
     </style>
     <link rel='stylesheet' id='twenty-twenty-one-style-css'
@@ -858,11 +918,124 @@
 
     <section class="insideBanner">
         <div class="container">
-            <h2 class="head">MICROWAVE IMAGING FOR</h2>
-            <h1 class="page-title">Biomedical Applications</h1>
+            <h2 class="head">MICROWAVE IMAGING FOR </h2>
+            <h1 class="page-title">BIOMEDICAL APPLICATIONS
+            </h1>
         </div>
     </section>
     <div class="container">
+
+        <h2 class="bodyhead">Description</h2>
+        <div class="grey">
+            <p class="para">The widely used clinical diagnostic methods include X-Ray Mammography, Ultrasound, Magnetic
+                Resonance Imaging (MRI) and Positron Emission Technology (PET). These methods are widely used in regular
+                medical examinations to detect tumors in different parts of the human body. X-ray mammography is the
+                most
+                popular method of imaging but the usage of highly ionizing X-Rays and breast compression using medical
+                examination has caused discomfort in patients. Ultrasound Imaging is a very good method of imaging
+                internal
+                structures of the body but the main issues associated with it are the low-resolution images that are
+                obtained, and the requirement of a skilled professional while
+                conducting the operation.</p>
+        </div>
+        <div class="grid-item imgsec">
+            <img src="../imgs/research/bio/img1.png" alt="" class="polarimg">
+            <div class="caption">Multi-static Imaging setup for biomedical Applications - Central Instrumentation
+                Facility, Nila Campus, Indian Institute of Technology, Palakkad </div>
+        </div>
+        <div class="grey">
+            <p class="para"> MRI scans produce a good image of the region under observation but this
+                methodology is more time-consuming and costly and cannot be used. PET scans also produce a good image
+                but
+                the patient is injected with a tracer to detect the internal organs clearly and the method is very
+                costly.
+                The disadvantages of these methods prompt us to move towards a new imaging methodology that is safe,
+                easy, less expensive and which do not require any skilled professional to operate.</p>
+        </div>
+        <div class="grid-item imgsec">
+            <img src="../imgs/research/bio/img2.png" alt="" class="polarimg">
+            <div class="caption">Metallic Object Detection Inside Human Stomach With Antipodal Vivaldi Antenna Utilizing
+                Microwave Imaging Technique. imaging algorithm is devised to identify the material inside the stomach.
+                The algorithm can locate the exact coordinates of the metallic objects along with their actual
+                dimensions used in the simulations. Further, the resolution of the image has been improved. </div>
+        </div>
+
+
+        <div class="container grey grid">
+
+            <div class="grid-item">
+
+                <p>
+                    Microwave Imaging (MI) is a method of detecting hidden or concealed objects in a structure
+                    or
+                    medium using Electromagnetic (EM) waves. Microwaves have the property of being able to
+                    travel
+                    through an opaque medium, which makes them a non-invasive agent for imaging. An opaque
+                    medium
+                    could be a human body as well as various concealed targets. The plethora of applications for
+                    which MI has been applied includes detection of breast cancer, detection of deeply buried
+                    targets, brain tumor detection, detection of cracks in concrete etc.</p>
+            </div>
+
+            <div class="grid-item item2">
+                <img decoding="async" src="../imgs/research/bio/img3.png" class="img-fluid" alt="">
+                <div class="caption">Designed breast phantom with tumour for imaging</div>
+            </div>
+
+        </div>
+
+        <div class="grid-item imgsec">
+            <img src="../imgs/research/bio/img4.png" alt="" class="polarimg">
+            <div class="caption"></div>
+        </div>
+        <div class="grey">
+            <p class="para">Microwave Imaging for the detection of breast cancer is based on the dielectric constant
+                difference between the healthy and malignant tissues. The high dielectric constant tumor reflects more
+                radiation that is picked up by the antenna and is utilized for accurately locating the position as well
+                as
+                the size of the tumor. Our major focus will be on the design of an ultrawide band antenna and it's
+                corresponding novel image reconstruction methodology for imaging. Efforts are also made to reduce the
+                time
+                complexity of the algorithm along with the reduction in the scanning aperture positions. The group is
+                also
+                focused on the design and fabrication of novel Imaging setup for biomedical applications. Currently, we
+                have
+                developed a semi-Automatic microwave imaging setup for Biomedical applications which is one of the
+                newest
+                kind in the country.</p>
+        </div>
+        <div class="grid-item imgsec">
+            <img src="../imgs/research/bio/img5.png" alt="" class="polarimg">
+            <div class="caption">Semi Automatic Microwave Biomedical Setup - Central Instrumentation Facility, Nila
+                Campus, Indian Institute of Technology, Palakkad</div>
+        </div>
+        <hr>
+        <h2>Selected Publications </h2>
+        <ul class="selectpub">
+            <li class="selectpub-item">[1] Gokul Nath S J, Athul O Asok and Sukomal Dey, “Metallic Object Detection
+                Inside Human Stomach With
+                Antipodal Vivaldi Antenna Utilizing Microwave Imaging Technique” 2021 <a class="highlight">IEEE Wireless
+                    and antenna Symposium, 2022.</a>
+            </li>
+            <li class="selectpub-item">[2] Athul O Asok, Gokul Nath S J, and Sukomal Dey, “Double Ridge Horn Antenna
+                With Curved Dielectric
+                Loading for Microwave Imaging Applications” 2021 <a class="highlight">IEEE Indian Conference on Antennas
+                    and Propagation
+                    (InCAP)</a>
+            </li>
+            <li class="selectpub-item">[3] Athul O Asok, Gokul Nath S J and Sukomal Dey, “Microwave Breast Imaging using
+                Synthetic Aperture
+                Radar Method utilizing UWB Antenna” accepted in <a class="highlight">IEEE-MTTS Latin-America Microwave
+                    Conference
+                    (LAMC-2021),</a> 26-28 May, 2021, Cali, Colombia.</li>
+            <li class="selectpub-item">[4] Athul O Asok, Gokul Nath S J and Sukomal Dey, “Ultra-wideband Antipodal
+                Antenna for Monostatic
+                Microwave Breast Imaging” <a class="highlight">13th International Conference on Antenna Test and
+                    Measurements (ATMS),
+                </a>
+                18-20th
+                Feb 2021, Ahmedabad, Gujarat.</li>
+        </ul>
 
     </div>
     <footer>

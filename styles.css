@@ -193,14 +193,23 @@ nav{
     align-items: center;
     left: 17%
 }
-
+.highlight{
+    color: #0165ff;
+    font-style:italic ;
+}
 .sliderSection .mainSlider .item .caption h1 {
     font-size: calc(20px + (48 - 29) * (100vw - 320px) / (1920 - 320));
     font-family: "Rubik-Bold";
     width: 42%;
     color: #fff;
 }
-
+.grey {
+    background-color: rgb(235, 235, 235);
+    padding: 15px;
+    margin-bottom: 3rem;
+        border-radius: 10px;
+        box-shadow: 2px 6px 7px 0px rgba(22, 22, 26, 0.22);
+}
 .sliderSection .owl-theme .owl-nav.disabled+.owl-dots {
     margin-top: 0px;
     z-index: 10000;
@@ -875,7 +884,18 @@ footer .container .item:nth-child(3) .footerLink ul li a {
 @media screen and (max-width: 1000px) {
     .insideBanner h1 {
         font-size: 3rem; 
-        text-decoration: underline rgb(255, 225, 0) 0.6rem;
+        text-decoration: underline rgb(255, 225, 0) 0.6rem;.paragraph-container {
+            text-align: justify;
+          }
+          
+          .left-aligned {
+            text-align: left;
+          }
+          
+          .right-aligned {
+            float: right;
+            word-spacing: 0.5em; /* Adjust the desired word spacing */
+          }
     }
   }
   @media screen and (max-width: 740px) {
