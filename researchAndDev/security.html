@@ -615,21 +615,72 @@
             }
         }
 
+        .bodyhead {
+            font-size: 2rem;
+            margin: 2rem 0rem;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: bold;
+            color: #323232;
+        }
+
+
+        .para {
+
+            line-height: 35px;
+            color: #555;
+
+        }
 
         .grid-item {
             width: 100%;
             height: auto;
-            margin-bottom: 3rem;
+            /* margin-bottom: 3rem; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
         }
 
         .grid-item img {
+            max-width: 60%;
+            height: auto;
+            margin-bottom: 1rem;
+
+        }
+
+        .imgsec {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .polarimg {
             max-width: 100%;
             height: auto;
             margin-bottom: 1rem;
         }
 
+        .desc {
+            /* margin-bottom: 40px; */
+            display: -ms-grid;
+            display: grid;
+            /* -ms-grid-columns: (1fr)[2]; */
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 50px;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .item2 {
+            margin-bottom: 0px;
+        }
+
+
         .caption {
-            font-size: 20px;
+            font-size: smaller;
             text-align: center;
 
         }
@@ -638,6 +689,20 @@
             .grid {
                 grid-template-columns: 1fr;
             }
+        }
+
+        hr {
+            margin: 1rem 0rem;
+            position: relative;
+            border: none;
+            height: 2px;
+            background: rgb(255, 225, 0);
+
+        }
+
+        .selectpub-item {
+            list-style: none;
+            margin-bottom: 1rem;
         }
     </style>
     <link rel='stylesheet' id='twenty-twenty-one-style-css'
@@ -858,11 +923,84 @@
 
     <section class="insideBanner">
         <div class="container">
-            <h2 class="head">MICROWAVE IMAGING FOR</h2>
-            <h1 class="page-title">Security Applications</h1>
+            <h2 class="head">MICROWAVE IMAGING FOR </h2>
+            <h1 class="page-title">BIOMEDICAL APPLICATIONS
+            </h1>
         </div>
     </section>
     <div class="container">
+
+        <h2 class="bodyhead">Description</h2>
+        <div class="grey">
+            <div class="container grid" style="gap:5px">
+
+                <div class="grid-item">
+
+                    <p class="para">
+                        Microwave imaging has been used for security applications such as imaging through walls to
+                        counter-terrorism and detecting concealed weapons. The most trusted technique in airports is a
+                        physical search method such as pat-down searches. The downside of this method is that it cannot
+                        detect materials implanted inside the human body. Thus, searches using imaging techniques are
+                        becoming more widespread as they can display the image of the concealed targets.</p>
+                    <p class="para">The walk-through metal detector (WTMD) gates are the most commonly used equipment
+                        for
+                        security
+                        scanning applications. It can detect ferrous items and is best suited for firearm detection.
+                        Another
+                        way of identifying various concealed targets is to measure the ringing of conducting objects
+                        after
+                        applying a pulse of electromagnetic radiation- based Late Time response (LTR).But, these methods
+                        cannot identify non-metallic threats such as ceramic knives, plastic
+                        and
+                        powder explosives, and liquids. Millimeter-wave-based 3D imaging methods, which are developed
+                        from
+                        microwave holography techniques, are also employed to identify concealed weapons and contraband.
+                    </p>
+                </div>
+
+                <div class="grid-item item2">
+                    <img decoding="async" src="../imgs/research/security/img1.png" class="img-fluid" alt=""
+                        style="max-width: 75%;">
+                    <div class="caption">Multi-static Imaging setup for biomedical Applications</div>
+                </div>
+            </div>
+        </div>
+        <h2>Imaging Methodology</h2>
+        <div class="grid-item item2">
+            <img decoding="async" src="../imgs/research/security/img2.png" class="img-fluid" alt=""
+                style="max-width: 70%;">
+            <div class="caption">Detailed Imaging Methodology for security Applications </div>
+        </div>
+
+        <div class="grey" style="padding: 30px">
+            <h2 style="margin-bottom: 20px;">Multi-Surface Imaging</h2>
+            <div class="grid-item item2">
+                <img decoding="async" src="../imgs/research/security/img3.png" class="img-fluid" alt=""
+                    style="max-width: 70%;">
+                <div class="caption">Security Imaging test measurement inside and outside the anechoic chamber</div>
+            </div>
+        </div>
+        <p class="para" style="margin-bottom: 2rem;">Terahertz and millimetre wave technologies are limited in their use
+            in the current context due
+            to the high cost of imaging setups. The public has also expressed privacy concerns about the high-resolution
+            2D images created by both these technologies. These difficulties limit the use of millimetre waves and
+            Terahertz systems in real-time applications, making these aforementioned technologies irrelevant for
+            security applications. There are several weapons with differing dielectric characteristics accessible
+            globally, and present techniques cannot detect those targets.</p>
+        <div class="grid-item item2">
+            <img decoding="async" src="../imgs/research/security/img4.png" class="img-fluid" alt=""
+                style="max-width: 70%;">
+            <div class="caption">Security Imaging test measurement inside and outside the anechoic chamber</div>
+        </div>
+        <p class="para" style="margin: 2rem 0;">In microwave imaging, the use of UWB results in the generation of
+            high-resolution images due to
+            the high bandwidth spectrum. The UWB unlicensed frequency band contains both low and high-frequency details.
+            The low frequency region gives high depth of penetration whereas the high frequency region gives high
+            resolution. The UWB range consists of both these regions and this makes the devices operating in the UWB
+            range popular in the imaging scenario.</p>
+
+
+
 
     </div>
     <footer>

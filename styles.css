@@ -128,22 +128,33 @@ header .logoSection {
     padding: 8px 0px
 }
 
+
 header .logoSection .container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 65px 106px 1fr;
     grid-template-columns: 65px 106px 1fr;
-    grid-gap: 20px;
+    grid-gap: 10px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center
 }
 
+header .logoSection .container .epmlLogo {
+    display: grid;
+    align-content: center;
+    align-self: center;
+    max-height: 80%;
+    max-width: 80%;
+}
+
 header .logoSection .container .epmlText {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
-    max-height: fit-content;
-    max-width: fit-content;
+    display: grid;
+    align-content: center;
+    max-height: 47%;
+    max-width: 47%;
     align-self: center
 }
 
