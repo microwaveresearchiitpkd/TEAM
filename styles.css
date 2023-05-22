@@ -104,7 +104,7 @@ body {
     font-family: "Rubik-Regular";
     line-height: 1.6;
     font-size: calc(16px + (18 - 16) * (100vw - 320px) / (1920 - 320));
-    background-image: linear-gradient(rgba(197, 216, 229, 0.5), rgba(230, 230, 230, 0.5)), url(imgs/bg.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.80), rgba(255, 255, 255, 0.8)), url(imgs/bg.jpg);
     background-color: #fff
 }
 
@@ -207,7 +207,7 @@ nav{
 }
 .highlight{
     color: #0165ff;
-    font-style:italic ;
+    font-style:italic ; 
 }
 .sliderSection .mainSlider .item .caption h1 {
     font-size: calc(20px + (48 - 29) * (100vw - 320px) / (1920 - 320));
@@ -216,11 +216,16 @@ nav{
     color: #fff;
 }
 .grey {
-    background-color: rgb(249, 249, 249);
+    background: rgba(255, 255, 255, 0.01);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+    border: 1px solid rgba(255, 255, 255, 0.34);
     padding: 15px;
     margin-bottom: 3rem;
     border-radius: 10px;
-    box-shadow: 2px 6px 7px 0px rgba(22, 22, 26, 0.22);
+    /* box-shadow: 2px 6px 7px 0px rgba(22, 22, 26, 0.22); */
 }
 .sliderSection .owl-theme .owl-nav.disabled+.owl-dots {
     margin-top: 0px;
@@ -232,6 +237,13 @@ nav{
 
 .aboutSection {
     padding: 70px 0px;
+    background: rgba(255, 255, 255, 0.01);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    margin-bottom: 2rem;
 }
 
 .aboutSection h2 {
@@ -283,7 +295,14 @@ nav{
 }
 
 .atGlanceSection {
-    padding: 70px 0px
+    padding: 70px 0px;
+    background: rgba(255, 255, 255, 0.01);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    margin: 2rem 0;
 }
 
 .atGlanceSection h2 {
@@ -629,14 +648,13 @@ border: 1px solid rgba(255, 255, 255, 0.34);
     padding: 70px 0px;
    /* From https://css.glass */
 /* From https://css.glass */
-background: rgba(255, 255, 255, 0.1);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(8.5px);
--webkit-backdrop-filter: blur(8.5px);
-border: 1px solid rgba(255, 255, 255, 0.07);
-margin-bottom: 2rem;
-    /* background-color: #d1d3d4 */
+background: rgba(255, 255, 255, 0.01);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    margin-bottom: 2rem;
 }
 
 .researchSection h2 {
@@ -658,6 +676,11 @@ margin-bottom: 2rem;
 .researchSection .container .item {
     overflow: hidden;
     position: relative;
+    transition: 0.5s ease;
+}
+
+.researchSection .container .item:hover{
+    transform: scale(1.08);
 }
 
 .researchSection .container .item img {
@@ -781,15 +804,32 @@ margin-bottom: 2rem;
 
 .publicationSection {
     padding: 70px 0px;
-    background-image:  url(imgs/pubbg.jpg);
-    background-size: auto;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.01);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    margin-bottom: 2rem;
+    height: 100%;
     margin-bottom: 1rem;
+}
+
+.publicationSection .homePublicationRow .item{
+    background: rgba(255, 255, 255, 0.01);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 229, 255, 0.18);
+    box-shadow: 2px 6px 10px 0px rgba(0, 229, 255, 0.22);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+    /* border: 1px solid rgb(0, 229, 255); */
 }
 
 .publicationSection h2 {
     font-size: calc(29px + (48 - 29) * (100vw - 320px) / (1920 - 320));
     font-family: "Rubik-SemiBold";
-    color: #fff;
+    color: #000;
     text-align: center;
     margin-bottom: 40px
 }
@@ -819,7 +859,7 @@ margin-bottom: 2rem;
     display: block;
     padding: 10px 15px;
     text-decoration: none;
-    color: #dfdfdf;
+    color: #000;
     border-bottom: 1px solid #ddd;
     -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear
@@ -1198,16 +1238,22 @@ tr {
 
 .homePublicationRow .item {
     border: 1px solid #fff;
-    color: #fff;
-    padding: 30px 20px
+    color: #555;
+    padding: 30px 20px;
+    transition: all 0.5s ease;
 }
 
-.homePublicationRow .item a {
+.homePublicationRow .item:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 6px 30px 0px rgba(0, 229, 255, 0.40);
+}
+
+.homePublicationRow a {
     color: #fff;
     text-decoration: none
 }
 
-.homePublicationRow .item:nth-child(1) {
+/* .homePublicationRow .item:nth-child(1) {
     background-color: #607d8b
 }
 
@@ -1221,7 +1267,7 @@ tr {
 
 .homePublicationRow .item:nth-child(4) {
     background-color: #009688
-}
+} */
 
 .insideMembarBoxRow .piInside {
     display: -ms-grid;
