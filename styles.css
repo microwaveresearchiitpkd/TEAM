@@ -215,11 +215,11 @@ nav{
     color: #fff;
 }
 .grey {
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(249, 249, 249);
     padding: 15px;
     margin-bottom: 3rem;
-        border-radius: 10px;
-        box-shadow: 2px 6px 7px 0px rgba(22, 22, 26, 0.22);
+    border-radius: 10px;
+    box-shadow: 2px 6px 7px 0px rgba(22, 22, 26, 0.22);
 }
 .sliderSection .owl-theme .owl-nav.disabled+.owl-dots {
     margin-top: 0px;

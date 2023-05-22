@@ -582,119 +582,76 @@
         }
     </style>
     <style>
-        .containerAbout {
-            display: flex;
-            flex-wrap: wrap;
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
         }
 
-        .sec {
-            background-color: #EEEADD;
-            padding-top: 5%;
+        .head {
+            text-align: left;
+            font-size: 2rem;
+            margin: 1rem 0rem;
+            color: #555;
         }
 
-        .imgsec {
+        .bodyhead {
+            font-size: 2rem;
+            margin: 2rem 0rem;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: bold;
+            color: #323232;
+        }
+
+
+        .para {
+            color: #555;
+        }
+
+        .grid-item {
+            width: 100%;
+            height: auto;
+            margin-bottom: 3rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
         }
 
-        .containerAbout>div {
-            flex: 1;
-            min-width: 50%;
-            padding: 20px;
-            box-sizing: border-box;
-            text-align: center;
-        }
-
-        .containerAbout img {
-            display: block;
+        .grid-item img {
             max-width: 60%;
             height: auto;
-            margin: 0 auto;
-            box-shadow: 2px 6px 8px 0px rgba(22, 22, 26, 0.18);
-            margin-bottom: 4%;
+            margin-bottom: 1rem;
+
         }
 
-        .containerAbout h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-            max-width: 90%;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-weight: bolder;
-        }
+        .imgsec {
+            display: flex;
+            justify-content: center;
 
-        .containerAbout h3 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-            text-align: left;
-            color: #cf2e2e;
-            font-weight: bold;
-        }
-
-        .containerAbout ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            line-height: 20px;
-        }
-
-        .containerAbout li {
-            margin-bottom: 5px;
-            text-align: left;
-        }
-
-        .para {
-            text-align: left;
-            font-size: medium;
-            color: #555;
-        }
-
-        .interest {
-            padding: 2%;
-        }
-
-        .interest h3 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-            text-align: left;
-            color: #cf2e2e;
-        }
-
-        .interest ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            padding-bottom: 30px;
-        }
-
-        .teachings {
-            background-color: #EEEADD;
-            padding: 2%;
-            margin-bottom: 30px;
-        }
-
-        .teachings h3 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-            text-align: left;
-            color: #cf2e2e;
-        }
-
-        .teachings ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
         }
 
 
-        @media (max-width: 490px) {
-
-            /* add a media query for screens smaller than 490 pixels wide */
-            .containerAbout>div {
-                min-width: 100%;
-                /* set the minimum width to 100% for each child element */
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
             }
+        }
+
+        hr {
+            margin: 1rem 0rem;
+            position: relative;
+            border: none;
+            height: 2px;
+            background: rgb(255, 225, 0);
+
+        }
+
+        .selectpub-item {
+            list-style: none;
+            margin-bottom: 1rem;
         }
     </style>
     <link rel='stylesheet' id='twenty-twenty-one-style-css'
@@ -876,7 +833,7 @@
 
                         <li id="menu-item-222"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-222"><a
-                                href="news.html">News</a></li>
+                                href="index.html#newsSection">News</a></li>
                         <li id="menu-item-223"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-223"><a
                                 href="openings.html">Openings</a></li>
@@ -891,9 +848,30 @@
     </header>
     <section class="insideBanner">
         <div class="container">
-            <h1 class="page-title">Openings</h1>
+            <h1 class="page-title">Contact</h1>
         </div>
     </section>
+    <div class="grey container">
+        <div class="grid" style="max-width: 70%;">
+            <div class="grid-item">
+                <img src="imgs/sir.jpg" alt="">
+            </div>
+            <div class="grid-item">
+                <div>
+                    <h2 class="head">Dr. Sukomal Dey</h2>
+                    <ul class="selectpub">
+                        <li class="selectpub-item para">Assistant Professor,</li>
+                        <li class="selectpub-item para">Email Me: sdey28@iitpkd.ac.in</li>
+                        <li class="selectpub-item para">Department of Electrical Engineering,</li>
+                        <li class="selectpub-item para">Indian Institute of Technology Palakkad</li>
+                        <li class="selectpub-item para">Nila Campus, Kanjikode west, Indian IIT Palakkad - 678623 India
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 
     <footer>
