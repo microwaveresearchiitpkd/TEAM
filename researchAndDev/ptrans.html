@@ -597,24 +597,90 @@
         }
 
         .head {
+            text-align: center;
             font-size: 2rem;
             margin: 1rem 0rem;
+            color: rgb(234, 229, 229);
+        }
+
+        @media screen and (max-width: 740px) {
+            .head {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media screen and (max-width: 450px) {
+            .head {
+                font-size: 1rem;
+            }
+        }
+
+        .bodyhead {
+            font-size: 2rem;
+            margin: 2rem 0rem;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: bold;
+            color: #323232;
+        }
+
+
+        .para {
+
+            line-height: 35px;
+            color: #555;
+
         }
 
         .grid-item {
             width: 100%;
             height: auto;
-            margin-bottom: 3rem;
+            /* margin-bottom: 3rem; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
         }
 
         .grid-item img {
+            max-width: 60%;
+            height: auto;
+            margin-bottom: 1rem;
+
+        }
+
+        .imgsec {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .polarimg {
             max-width: 100%;
             height: auto;
             margin-bottom: 1rem;
         }
 
+        .desc {
+            /* margin-bottom: 40px; */
+            display: -ms-grid;
+            display: grid;
+            /* -ms-grid-columns: (1fr)[2]; */
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 50px;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .item2 {
+            margin-bottom: 0px;
+        }
+
+
         .caption {
-            font-size: 20px;
+            font-size: smaller;
             text-align: center;
 
         }
@@ -623,6 +689,20 @@
             .grid {
                 grid-template-columns: 1fr;
             }
+        }
+
+        hr {
+            margin: 1rem 0rem;
+            position: relative;
+            border: none;
+            height: 2px;
+            background: rgb(255, 225, 0);
+
+        }
+
+        .selectpub-item {
+            list-style: none;
+            margin-bottom: 1rem;
         }
     </style>
     <link rel='stylesheet' id='twenty-twenty-one-style-css'
@@ -764,6 +844,9 @@
                                     <a href="rf.html">RF MEMS</a></li>
                             </ul>
                         </li>
+                        <li id="menu-item-222"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-222"><a
+                                href="../facilities.html">Research Facilities</a></li>
                         <li id="menu-item-219"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-219">
                             <a href="#">Publications</a><button class="sub-menu-toggle" aria-expanded="false"
@@ -799,42 +882,15 @@
                                         filing</a></li>
                             </ul>
                         </li>
-                        <!-- <li id="menu-item-220"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-220">
-                            <a href="#">Collaboration</a><button class="sub-menu-toggle" aria-expanded="false"
-                                onClick="twentytwentyoneExpandSubMenu(this)"><span class="icon-plus"><svg
-                                        class="svg-icon" width="18" height="18" aria-hidden="true" role="img"
-                                        focusable="false" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M18 11.2h-5.2V6h-1.6v5.2H6v1.6h5.2V18h1.6v-5.2H18z"
-                                            fill="currentColor" /></svg></span><span class="icon-minus"><svg
-                                        class="svg-icon" width="18" height="18" aria-hidden="true" role="img"
-                                        focusable="false" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6 11h12v2H6z"
-                                            fill="currentColor" /></svg></span><span class="screen-reader-text">Open
-                                    menu</span></button>
-                            <ul class="sub-menu">
-                                <li id="menu-item-600"
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-600">
-                                    <a href="http://www.facweb.iitkgp.ac.in/~skapat/?page_id=595">Industry
-                                        Collaboration</a></li>
-                                <li id="menu-item-599"
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-599">
-                                    <a href="http://www.facweb.iitkgp.ac.in/~skapat/?page_id=597">Academic
-                                        Collaboration</a></li>
-                            </ul>
-                        </li> -->
                         <li id="menu-item-222"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-222"><a
-                                href="../news/news.html">News</a></li>
+                                href="../news.html">News</a></li>
                         <li id="menu-item-223"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-223"><a
-                                href="../eventstab/events.html">Events</a></li>
+                                href="../openings.html">Events</a></li>
                         <li id="menu-item-594"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-594"><a
-                                href="../contact/contact.html">CONTACT Me</a></li>
+                                href="../contact.html">CONTACT Me</a></li>
                     </ul>
                 </div>
             </div>
@@ -843,10 +899,64 @@
 
     <section class="insideBanner">
         <div class="container">
-            <h1 class="page-title">Wireless Power Transfer</h1>
+            <h1 class="page-title">WIRELESS POWER TRANSFER
+            </h1>
         </div>
     </section>
     <div class="container">
+
+        <h2 class="bodyhead">Description</h2>
+        <div class="grey">
+            <p class="para">Implantable sensors are used in the field of Biomedical devices extensively. They help to
+                enable self-monitoring of the patients in which the patients themselves constitute the part of the
+                sensing system to detect changes, consciously or unconsciously of the health conditions. The examples of
+                the implantable sensors include pressure sensor implanted in brain for measuring the Inter Cranial
+                Pressure (ICP) of the brain (which rises when a person is in hypertension), cardiac pacemakers,
+                glucose-level monitoring sensor, implantable insulin pumps, etc. Other implantable sensors inside the
+                body are used to measure temperature, pulse oximetry, barcode sensing, force, etc.</p>
+        </div>
+        <div class="grid">
+            <div class="grid-item item2">
+                <img decoding="async" src="../imgs/research/ptrans/img1.png" class="img-fluid" alt=""
+                    style="max-width: 70%;">
+                <div class="caption">Power Detector </div>
+            </div>
+            <div class="grid-item item2">
+                <img decoding="async" src="../imgs/research/ptrans/img2.png" class="img-fluid" alt=""
+                    style="max-width: 70%;">
+                <div class="caption">Antenna (TX and RX) </div>
+            </div>
+        </div>
+
+        <div class="grey" style="margin-top: 2rem;">
+            <p class="para">The two prime requirements for any efficient implantable sensor are: (1) An efficient
+                Wireless Power Transfer (WPT) System for driving power into the sensor, and establishing effective
+                communication between the transmitter and the receiver, (2) Miniaturized antenna to be implanted inside
+                the body. In the view of above, we aim to design a setup for efficient Wireless Power Transfer System
+                that can can be used for effectively supplying the required power to medical implants used in pacemaker
+                (70 µW), nerve stimulation device (100 µW) and glucose measurement system (48 µW).</p>
+        </div>
+        <div class="grid">
+            <div class="grid-item item2">
+                <img decoding="async" src="../imgs/research/ptrans/img3.png" class="img-fluid" alt=""
+                    style="max-width: 70%;">
+                <div class="caption">Power Detector </div>
+            </div>
+            <div class="grid-item item2">
+                <img decoding="async" src="../imgs/research/ptrans/img4.png" class="img-fluid" alt=""
+                    style="max-width: 70%;">
+                <div class="caption">Antenna (TX and RX) </div>
+            </div>
+        </div>
+        <div class="grey" style="margin-top: 2rem;">
+            <p class="para">We integrated the antenna with the power detector in ADS. The power source was connected at
+                port-1 which corresponds to the input port of the transmitting antenna and the power detector was
+                connected at port-2 (corresponding to implantable antenna). As per the Specific Absorption Rate (SAR)
+                Regulations, the maximum input power that can be supplied according to the safety standards is equal to
+                1W (or 30dBm). Hence, the input power is varied from 10 dBm to 30 dBm and the obtained DC output power
+                was plotted with respect to this input power at 2 frequencies (868 MHz and 915 MHz) corresponding to the
+                2 ISM bands.</p>
+        </div>
 
     </div>
     <footer>

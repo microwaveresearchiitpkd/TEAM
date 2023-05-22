@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles.css">
     <!-- <link rel="stylesheet" href="customeStylemin.css"> -->
     <!-- <link rel="stylesheet" href="owl.carousel.min.css"> -->
     <!-- <link rel="stylesheet" href="owl.theme.default.min.css"> -->
@@ -17,7 +17,7 @@
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="../menuStyle.css">
+    <link rel="stylesheet" href="menuStyle.css">
     <title>Sukomal Dey</title>
     <meta name='robots' content='max-image-preview:large' />
     <link rel="alternate" type="application/rss+xml" title="Santanu Kapat &raquo; Feed"
@@ -582,59 +582,124 @@
         }
     </style>
     <style>
-        .insideBanner {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imgs/publications.jpg);
+        .containerAbout {
+            display: flex;
+            flex-wrap: wrap;
         }
 
-        .insideBanner h1 {
-            color: rgb(234, 229, 229);
+        .sec {
+            background-color: #EEEADD;
+            padding-top: 5%;
         }
 
-        .book-head {
-            margin: 1.7em 0;
-            font-weight: bolder;
-            text-align: center;
-        }
-
-        .book-heading {
-            margin: 3em 1em 0;
-            text-align: center;
-            font-weight: bold;
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            grid-gap: 20px;
-            max-width: 960px;
-            margin: 0 auto;
+        .imgsec {
+            display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
         }
 
-        .grid-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        .containerAbout>div {
+            flex: 1;
+            min-width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
             text-align: center;
         }
 
-        .grid-item img {
-            width: 100%;
-            max-width: 400px;
+        .containerAbout img {
+            display: block;
+            max-width: 60%;
             height: auto;
+            margin: 0 auto;
+            box-shadow: 2px 6px 8px 0px rgba(22, 22, 26, 0.18);
+            margin-bottom: 4%;
         }
 
-        .grid-item p {
+        .containerAbout h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            max-width: 90%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bolder;
+        }
+
+        .containerAbout h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            text-align: left;
+            color: #cf2e2e;
+            font-weight: bold;
+        }
+
+        .containerAbout ul {
+            list-style: none;
             margin: 0;
-            padding: 10px;
-            text-align: center;
+            padding: 0;
+            line-height: 20px;
+        }
+
+        .containerAbout li {
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        .para {
+            text-align: left;
+            font-size: medium;
+            color: #555;
+        }
+
+        .interest {
+            padding: 2%;
+        }
+
+        .interest h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            text-align: left;
+            color: #cf2e2e;
+        }
+
+        .interest ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 30px;
+        }
+
+        .teachings {
+            background-color: #EEEADD;
+            padding: 2%;
+            margin-bottom: 30px;
+        }
+
+        .teachings h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            text-align: left;
+            color: #cf2e2e;
+        }
+
+        .teachings ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        @media (max-width: 490px) {
+
+            /* add a media query for screens smaller than 490 pixels wide */
+            .containerAbout>div {
+                min-width: 100%;
+                /* set the minimum width to 100% for each child element */
+            }
         }
     </style>
     <link rel='stylesheet' id='twenty-twenty-one-style-css'
         href='http://www.facweb.iitkgp.ac.in/~skapat/wp-content/themes/sk/style.css?ver=6.1.1' media='all' />
-    <link rel='stylesheet' id='twenty-twenty-one-print-style-css' href='../assets/css/print.css?ver=6.1.1'
-        media='print' />
+    <link rel='stylesheet' id='twenty-twenty-one-print-style-css' href='assets/css/print.css?ver=6.1.1' media='print' />
     <link rel="EditURI" type="application/rsd+xml" title="RSD"
         href="http://www.facweb.iitkgp.ac.in/~skapat/xmlrpc.php?rsd" />
     <link rel="wlwmanifest" type="application/wlwmanifest+xml"
@@ -649,12 +714,12 @@
         <section class="logoSection">
             <div class="container">
                 <div class="kgpLogo">
-                    <a href="../index.html"><img src="../imgs/logo.png" class="img-fluid" alt=""></a>
+                    <a href="index.html"><img src="imgs/logo.png" class="img-fluid" alt=""></a>
                 </div>
                 <div class="epmlLogo">
-                    <a href="../index.html"><img src="../imgs/pkdlogo.png" class="img-fluid" alt=""></a> </div>
+                    <a href="index.html"><img src="imgs/pkdlogo.png" class="img-fluid" alt=""></a> </div>
                 <div class="epmlText">
-                    <img src="../imgs/header.png" class="img-fluid" alt=""> </div>
+                    <img src="imgs/header.png" class="img-fluid" alt=""> </div>
             </div>
         </section>
         <nav>
@@ -663,10 +728,10 @@
                     <ul id="mainmenu" class="top-main-menu">
                         <li id="menu-item-14"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item menu-item-14">
-                            <a href="../index.html" aria-current="page">Home</a></li>
+                            <a href="index.html" aria-current="page">Home</a></li>
                         <li id="menu-item-14"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item menu-item-14">
-                            <a href="../aboutme.html" aria-current="page">About Me</a></li>
+                            <a href="aboutme.html" aria-current="page">About Me</a></li>
                         <li id="menu-item-217"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-217">
                             <a href="#">Students</a><button class="sub-menu-toggle" aria-expanded="false"
@@ -686,38 +751,38 @@
                             <ul class="sub-menu">
                                 <li id="menu-item-736"
                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-736">
-                                    <a href="../students/ongoing.html">Ongoing
+                                    <a href="students/ongoing.html">Ongoing
                                         Students</a>
                                     <ul class="sub-menu">
                                         <li id="menu-item-1012"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1012">
-                                            <a href="../students/aongoing/fellows.html">Research
+                                            <a href="students/ongoing/fellows.html">Research
                                                 Fellows</a></li>
                                         <li id="menu-item-1011"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1011">
-                                            <a href="../students/aongoing/scholars.html">Research
+                                            <a href="students/ongoing/scholars.html">Research
                                                 Scholars</a></li>
                                         <li id="menu-item-1010"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1010">
-                                            <a href="../students/aongoing/ugpg.html">UG/PG</a>
+                                            <a href="students/ongoing/ugpg.html">UG/PG</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li id="menu-item-739"
                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-739">
-                                    <a href="../students/alumini.html">Alumni</a>
+                                    <a href="students/alumini.html">Alumni</a>
                                     <ul class="sub-menu">
                                         <li id="menu-item-1003"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1003">
-                                            <a href="../students/aAlumini/ms.html">MS</a>
+                                            <a href="students/Alumini/ms.html">MS</a>
                                         </li>
                                         <li id="menu-item-1002"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1002">
-                                            <a href="../students/aAlumini/phd.html">Ph.D.</a>
+                                            <a href="students/Alumini/phd.html">Ph.D.</a>
                                         </li>
                                         <li id="menu-item-1001"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001">
-                                            <a href="../students/aAlumini/ugpg.html">UG/PG</a>
+                                            <a href="students/Alumini/ugpg.html">UG/PG</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -772,7 +837,7 @@
                         </li>
                         <li id="menu-item-222"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-222"><a
-                                href="../facilities.html">Research Facilities</a></li>
+                                href="facilities.html">Research Facilities</a></li>
                         <li id="menu-item-219"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-219">
                             <a href="#">Publications</a><button class="sub-menu-toggle" aria-expanded="false"
@@ -792,31 +857,33 @@
                             <ul class="sub-menu">
                                 <li id="menu-item-250"
                                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-250">
-                                    <a href="../publications/chapters.html">Book
+                                    <a href="publications/chapters.html">Book
                                         chapters</a></li>
                                 <li id="menu-item-248"
                                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-248">
-                                    <a href="../publications/conferencePubs.html">Conference
+                                    <a href="publications/conferencePubs.html">Conference
                                         publications</a></li>
                                 <li id="menu-item-247"
                                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-247">
-                                    <a href="../publications/journalPubs.html">Journal
+                                    <a href="publications/journalPubs.html">Journal
                                         publications</a></li>
                                 <li id="menu-item-249"
                                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-249">
-                                    <a href="../publications/patent.html">Patent
+                                    <a href="publications/patent.html">Patent
                                         filing</a></li>
                             </ul>
                         </li>
+
                         <li id="menu-item-222"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-222"><a
-                                href="../news.html">News</a></li>
+                                href="news.html">News</a></li>
                         <li id="menu-item-223"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-223"><a
-                                href="../openings.html">Events</a></li>
+                                href="openings.html">Openings</a></li>
                         <li id="menu-item-594"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-594"><a
-                                href="../contact.html">CONTACT Me</a></li>
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-594">
+                            <a href="contact.html">CONTACT Me</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -824,42 +891,15 @@
     </header>
     <section class="insideBanner">
         <div class="container">
-            <h1 class="page-title">Books And Chapters</h1>
+            <h1 class="page-title">Openings</h1>
         </div>
     </section>
-    <div class="container">
-        <h2 class="book-head">Books</h2>
-        <div class="grid-container">
-            <div class="grid-item">
-                <img src="../imgs/radfreq.jpg" alt="Image 1">
-                <p>Shiban K Koul and Sukomal Dey, “Radio-Frequency Micromachined Switches, Switching Networks and Phase
-                    Shifters”, by CRC Press, Taylor and Francis Group, ISBN NO: 978-0-8153-6143-5. </p>
-            </div>
-            <div class="grid-item">
-                <img src="../imgs/micromachined.JPG" alt="Image 2">
-                <p>Shiban K Koul and Sukomal Dey, “Micromachined Devices and Circuits for Microwave to Sub-millimeter
-                    Wave
-                    Applications”, by Springer Nature, ID: 702DAE02-3368-42E9-8726-7F9751B12837 </p>
-            </div>
-        </div>
-        <h3 class="book-head">Book Chapters</h3>
-        <p class="book-para">BC2. Shiban Koul and Sukomal Dey (2014), “RF MEMS Single-Pole-Multi-Throw switching
-            Circuit”, in an Edited book “Micro and Smart Devices and system” eds. K.J.Vinoy, G.K.Ananthasuresh, Rudra
-            Pratap and A.B.Krupanidhi,
-            Springer, New Delhi, ISBN 0-978-81-322-1912-5.
-        </p>
 
-        <p class="book-para"> BC1: Shiban Koul and Sukomal Dey (2014), “RF MEMS True-Time-Delay Phase Shifter”, in an
-            Edited
-            book “Micro and Smart Devices and system” eds. K.J.Vinoy, G.K.Ananthasuresh, Rudra Pratap and
-            A.B.Krupanidhi, Springer, New
-            Delhi, ISBN 0-978-81-322-1912-5.
-        </p>
-    </div>
+
     <footer>
         <div class="container">
             <div class="item">
-                <img class="img-fluid" src="../imgs/logo.png" alt="" />
+                <img class="img-fluid" src="imgs/logo.png" alt="" />
                 <h3>Advanced EM & Antenna Research Group</h3>
                 <h5>Indian Institute of Technology Palakkad</h5>
             </div>
@@ -902,6 +942,8 @@
             </div>
         </div>
     </footer>
+
+
     <script>
         document.body.classList.remove("no-js");
     </script>
@@ -916,10 +958,9 @@
             '<script src="assets/js/polyfills.js"></scr' +
             'ipt>');
     </script>
-    <script src='../assets/js/primary-navigation.js?ver=6.1.1' id='twenty-twenty-one-primary-navigation-script-js'>
+    <script src='assets/js/primary-navigation.js?ver=6.1.1' id='twenty-twenty-one-primary-navigation-script-js'>
     </script>
-    <script src='../assets/js/responsive-embeds.js?ver=6.1.1' id='twenty-twenty-one-responsive-embeds-script-js'>
-    </script>
+    <script src='assets/js/responsive-embeds.js?ver=6.1.1' id='twenty-twenty-one-responsive-embeds-script-js'></script>
     <script>
         /(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window
             .addEventListener("hashchange", (function () {
@@ -939,10 +980,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
-    <script src="../tabsScript.js">
+    <script src="tabsScript.js">
     </script>
-    <script src="../menuScript.js"></script>
-    <script src="../customScript.js">
+    <script src="menuScript.js"></script>
+    <script src="customScript.js">
     </script>
 </body>
 
