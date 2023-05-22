@@ -104,6 +104,7 @@ body {
     font-family: "Rubik-Regular";
     line-height: 1.6;
     font-size: calc(16px + (18 - 16) * (100vw - 320px) / (1920 - 320));
+    background-image: linear-gradient(rgba(197, 216, 229, 0.5), rgba(230, 230, 230, 0.5)), url(imgs/bg.jpg);
     background-color: #fff
 }
 
@@ -444,7 +445,9 @@ nav{
 }
 
 .newsEpmlSection {
-    padding: 10px 0px
+    padding: 2rem 0px;
+    
+    
 }
 
 .newsEpmlSection h2 {
@@ -459,8 +462,15 @@ nav{
     padding: 20px;
     border-radius: 10px;
     font-size: 1.1rem;
-    box-shadow: 2px 6px 8px 0px rgba(22, 22, 26, 0.18);
     margin-bottom: 15px;
+    /* From https://css.glass */
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.1);
+
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.5px);
+-webkit-backdrop-filter: blur(8.5px);
+border: 1px solid rgba(255, 255, 255, 0.34);
 }
 
 .newsEpmlSection .newsSlider .item .card-heading {
@@ -617,7 +627,16 @@ nav{
 
 .researchSection {
     padding: 70px 0px;
-    background-color: #d1d3d4
+   /* From https://css.glass */
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.1);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.5px);
+-webkit-backdrop-filter: blur(8.5px);
+border: 1px solid rgba(255, 255, 255, 0.07);
+margin-bottom: 2rem;
+    /* background-color: #d1d3d4 */
 }
 
 .researchSection h2 {
@@ -762,7 +781,9 @@ nav{
 
 .publicationSection {
     padding: 70px 0px;
-    background-color: #0a48a8
+    background-image:  url(imgs/pubbg.jpg);
+    background-size: auto;
+    margin-bottom: 1rem;
 }
 
 .publicationSection h2 {
@@ -2283,8 +2304,8 @@ only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
     }
 
     .researchSection .container .item img {
-        height: 100%;
-        width: 100%
+        max-width: 100%;
+        max-height: 100%;
     }
 
     .indusCollaboration .logoContainer .item:nth-child(2) .catBoxRow {
