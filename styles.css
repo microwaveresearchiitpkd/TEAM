@@ -182,7 +182,9 @@ header .logoSection .container .loginLink .btnUserLogin:hover {
     background-color: #fff;
     color: #001e54;
 }
-nav{
+
+
+/* nav{
     background: rgba(255, 255, 255, 0.401);
     border-radius: 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -192,28 +194,26 @@ nav{
 
     box-shadow: 2px 6px 10px 0px rgba(22, 22, 26, 0.18); 
 }
- 
+  */
 
-#navbar{
+/* #navbar{
+    overflow: hidden;
     position: fixed;
-    margin: 15px auto;
+    margin: 0px auto;
     z-index: 5;
 }
 
 .sticky {
-    text-align: center;
-    margin: 15px auto;
+    margin: 0px auto;
     position: fixed;
     top: 0;
-    /* width: auto; */
-  }
+    width: auto;
+  } */
 
-  .sticky + .content {
+  /* .sticky + .content {
     padding-top: 60px;
-  }
+  } */
 
-  
-  
 
 .sliderSection .mainSlider .item {
     position: relative;
