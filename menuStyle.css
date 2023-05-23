@@ -34,6 +34,7 @@
     line-height: 1;
     position: relative;
     z-index: 100;
+    
 }
 
 
@@ -85,6 +86,7 @@
 }
 
 #cssmenu>ul>li>a:nth-child(8) {
+    
     border: 0px;
 }
 
@@ -146,6 +148,14 @@
 }
 
 #cssmenu ul ul li {
+    background: rgba(255, 255, 255, 0.701);
+    border-radius: 3px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    box-shadow: 2px 3px 5px 0px rgba(22, 22, 26, 0.05); 
+
     height: 0;
     -webkit-transition: height .2s ease;
     -moz-transition: height .2s ease;
@@ -160,25 +170,25 @@
 
 #cssmenu ul ul li a {
     
-    padding: 7px 20px ;
-    background: #001e54;
+    padding: 5.5px 20px ;
     text-decoration: none;
     color: #000;
-    font-size: 1rem;
+    font-size: 1.2rem;
     min-width: 200px;
-    white-space: nowrap;
+    white-space: nowrap;    
+    
     -webkit-transition: color .2s ease;
     -moz-transition: color .2s ease;
     -ms-transition: color .2s ease;
     -o-transition: color .2s ease;
     transition: color .2s ease;
-    background: rgba(255, 255, 255, 0.71);
+    /* background: rgba(255, 255, 255, 0.51);
     border-radius: 3px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10.7px);
-    -webkit-backdrop-filter: blur(10.7px);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
     border: 1px solid rgba(255, 255, 255, 0.34);
-    box-shadow: 2px 6px 10px 0px rgba(22, 22, 26, 0.18); 
+    box-shadow: 2px 6px 10px 0px rgba(22, 22, 26, 0.08);  */
 
 
     /* background: rgba(255, 255, 255, 0.801);

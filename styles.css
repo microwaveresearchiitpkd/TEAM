@@ -181,30 +181,21 @@ header .logoSection .container .loginLink .btnUserLogin {
 header .logoSection .container .loginLink .btnUserLogin:hover {
     background-color: #fff;
     color: #001e54;
-    /* rgba(22, 22, 26, 0.18); */
 }
 nav{
-    background: rgba(255, 255, 255, 0.601);
+    background: rgba(255, 255, 255, 0.401);
     border-radius: 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.7px);
     -webkit-backdrop-filter: blur(5.7px);
     border: 1px solid rgba(255, 255, 255, 0.34);
-    /* background-color: rgb(255, 252, 231); */
     box-shadow: 2px 6px 10px 0px rgba(22, 22, 26, 0.18); 
 }
  
 
 #navbar{
-    /* overflow: hidden; */
-    /* max-width: 1320px; */
-    text-align: center;
-    margin: 15px auto;
-    /* padding-right: var(--bs-gutter-x, 0.75rem);
-    padding-left: var(--bs-gutter-x, 0.75rem); */
-  
-
     position: fixed;
+    margin: 15px auto;
     z-index: 5;
 }
 
@@ -213,12 +204,15 @@ nav{
     margin: 15px auto;
     position: fixed;
     top: 0;
-    /* width: 100%; */
+    /* width: auto; */
   }
 
   .sticky + .content {
     padding-top: 60px;
   }
+
+  
+  
 
 .sliderSection .mainSlider .item {
     position: relative;
@@ -858,8 +852,8 @@ background: rgba(255, 255, 255, 0.01);
 .publicationSection .homePublicationRow .item{
     background: rgba(255, 255, 255, 0.01);
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 229, 255, 0.18);
-    box-shadow: 2px 6px 10px 0px rgba(0, 229, 255, 0.22);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18) ;
+    /* box-shadow: 2px 6px 10px 0px rgba(0, 229, 255, 0.22); */
     backdrop-filter: blur(5.7px);
     -webkit-backdrop-filter: blur(5.7px);
     /* border: 1px solid rgb(0, 229, 255); */

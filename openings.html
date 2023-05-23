@@ -883,7 +883,7 @@
     <footer>
         <div class="container">
             <div class="item">
-                <img class="img-fluid" src="imgs/logo.png" alt="" />
+                <img class="img-fluid" src="imgs/logo.png" alt="" style="max-width: 50%;" />
                 <h3>Advanced EM & Antenna Research Group</h3>
                 <h5>Indian Institute of Technology Palakkad</h5>
             </div>
@@ -898,31 +898,28 @@
                     <ul id="mainmenu" class="footer-main-menu">
                         <li id="menu-item-15"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15"><a
-                                href="#">About IIT Palakkad</a></li>
+                                href="index.html">About IIT Palakkad</a></li>
                         <li id="menu-item-16"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16"><a
-                                href="#">About the Campus</a></li>
+                                href="index.html#aboutaearg">About AEAR Lab</a></li>
                         <li id="menu-item-17"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="#">Key
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a
+                                href="index.html#publicationsection">Key
                                 Publication List</a></li>
                         <li id="menu-item-18"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18"><a
-                                href="#">Research / Projects</a></li>
+                                href="index.html#researchsection">Research Areas</a></li>
                         <li id="menu-item-19"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19"><a
-                                href="#">News/ Events</a></li>
-                        <li id="menu-item-20"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20"><a
-                                href="#">Seminars</a></li>
+                                href="index.html#newsSection">News</a></li>
                         <li id="menu-item-21"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21"><a
-                                href="#">Image Gallery</a></li>
+                                href="facilities.html">Research Facilities</a></li>
                     </ul>
                 </div>
             </div>
             <div class="item">
-                <img class="img-fluid" src="http://www.facweb.iitkgp.ac.in/~skapat/wp-content/uploads/2022/01/map.jpg"
-                    alt="" />
+                <img class="img-fluid" src="imgs/map.jpg" alt="" />
             </div>
         </div>
     </footer>
@@ -936,15 +933,15 @@
             document.body.classList.add('is-IE');
         }
     </script>
-    <script id='twenty-twenty-one-ie11-polyfills-js-after'>
+    <!-- <script id='twenty-twenty-one-ie11-polyfills-js-after'>
         (Element.prototype.matches && Element.prototype.closest && window.NodeList && NodeList.prototype.forEach) ||
         document.write(
-            '<script src="assets/js/polyfills.js"></scr' +
-            'ipt>');
-    </script>
-    <script src='assets/js/primary-navigation.js?ver=6.1.1' id='twenty-twenty-one-primary-navigation-script-js'>
-    </script>
-    <script src='assets/js/responsive-embeds.js?ver=6.1.1' id='twenty-twenty-one-responsive-embeds-script-js'></script>
+             '<script src="assets/js/polyfills.js"></scr' +
+             'ipt>');
+   </script> -->
+    <!-- <script src='assets/js/primary-navigation.js?ver=6.1.1' id='twenty-twenty-one-primary-navigation-script-js'>
+   </script>
+   <script src='assets/js/responsive-embeds.js?ver=6.1.1' id='twenty-twenty-one-responsive-embeds-script-js'></script> -->
     <script>
         /(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window
             .addEventListener("hashchange", (function () {
@@ -954,8 +951,6 @@
                     .focus())
             }), !1);
     </script>
-    <!-- <script src="jquery-3.6.0.min.js"></script>
-    <script src="owl.carousel.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -968,6 +963,21 @@
     </script>
     <script src="menuScript.js"></script>
     <script src="customScript.js">
+    </script>
+    <script>
+        window.onscroll = function () {
+            myFunction()
+        };
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
     </script>
 </body>
 
