@@ -39,6 +39,7 @@
 
 #cssmenu>ul>li {
     float: left;
+    z-index: 200;
 
     
 }
@@ -118,7 +119,7 @@
 }
 
 #cssmenu>ul>li.has-sub:hover>a::after {
-    border-color: #fee7b1;
+    border-color: #ff4d00;
 }
 
 #cssmenu ul ul {
@@ -158,26 +159,46 @@
 }
 
 #cssmenu ul ul li a {
-    padding: 11px 20px;
+    
+    padding: 7px 20px ;
     background: #001e54;
     text-decoration: none;
-    color: #fff;
+    color: #000;
     font-size: 1rem;
-    min-width: 173px;
+    min-width: 200px;
     white-space: nowrap;
     -webkit-transition: color .2s ease;
     -moz-transition: color .2s ease;
     -ms-transition: color .2s ease;
     -o-transition: color .2s ease;
     transition: color .2s ease;
+    background: rgba(255, 255, 255, 0.71);
+    border-radius: 3px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.7px);
+    -webkit-backdrop-filter: blur(10.7px);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    box-shadow: 2px 6px 10px 0px rgba(22, 22, 26, 0.18); 
+
+
+    /* background: rgba(255, 255, 255, 0.801);
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+
+    box-shadow: 2px 6px 10px 0px rgba(22, 22, 26, 0.08);  */
 }
 
 #cssmenu ul ul li:hover>a,
 #cssmenu ul ul li a:hover {
-    color: #fee7b1;
+    /* z-index: 200; */
+    color: #ff4d00;
 }
 
 #cssmenu ul ul li.has-sub>a::after {
+    
     position: absolute;
     top: 13px;
     right: 10px;

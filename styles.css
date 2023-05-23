@@ -184,9 +184,41 @@ header .logoSection .container .loginLink .btnUserLogin:hover {
     /* rgba(22, 22, 26, 0.18); */
 }
 nav{
-    background-color: rgb(255, 252, 231);
-    box-shadow: 2px 6px 10px 0px rgba(22, 22, 26, 0.18);
+    background: rgba(255, 255, 255, 0.601);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    /* background-color: rgb(255, 252, 231); */
+    box-shadow: 2px 6px 10px 0px rgba(22, 22, 26, 0.18); 
 }
+ 
+
+#navbar{
+    /* overflow: hidden; */
+    /* max-width: 1320px; */
+    text-align: center;
+    margin: 15px auto;
+    /* padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem); */
+  
+
+    position: fixed;
+    z-index: 5;
+}
+
+.sticky {
+    text-align: center;
+    margin: 15px auto;
+    position: fixed;
+    top: 0;
+    /* width: 100%; */
+  }
+
+  .sticky + .content {
+    padding-top: 60px;
+  }
 
 .sliderSection .mainSlider .item {
     position: relative;
@@ -243,6 +275,7 @@ nav{
     backdrop-filter: blur(5.7px);
     -webkit-backdrop-filter: blur(5.7px);
     border: 1px solid rgba(255, 255, 255, 0.34);
+    margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
@@ -270,6 +303,7 @@ nav{
     margin-bottom: 10px;
     text-align: left;
 }
+
 
 .aboutSection .bottomAction {
     text-align: center;
@@ -670,16 +704,20 @@ background: rgba(255, 255, 255, 0.01);
     display: grid;
     /* -ms-grid-columns: (1fr)[4]; */
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 15px
+    grid-gap: 40px
 }
 
 .researchSection .container .item {
     overflow: hidden;
     position: relative;
+    box-shadow: 2px 6px 10px 0px rgba(0, 0, 0, 0.22);
+    filter:brightness(90%);
     transition: 0.5s ease;
 }
 
 .researchSection .container .item:hover{
+    filter:brightness(120%);
+   box-shadow: 2px 6px 20px 0px rgba(0, 0, 0, 0.30);;
     transform: scale(1.08);
 }
 
@@ -690,6 +728,7 @@ background: rgba(255, 255, 255, 0.01);
 
 .researchSection .container .item .caption {
     position: absolute;
+   
     bottom: 20px;
     color: #fff;
     padding: 30px
