@@ -133,20 +133,39 @@ header .logoSection {
 header .logoSection .container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 65px 106px 1fr;
-    grid-template-columns: 65px 106px 1fr;
+    -ms-grid-columns: 65px 70px 1fr;
+    grid-template-columns: 65px 70px 1fr;
     grid-gap: 10px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center
 }
 
-header .logoSection .container .epmlLogo {
+header .logoSection .container .kgpLogo {
     display: grid;
     align-content: center;
     align-self: center;
-    max-height: 80%;
-    max-width: 80%;
+    max-width: 90%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logoSection .container .epmlLogo {
+    display: grid;
+    align-content: center;
+    /* align-self: center;
+    max-width: 90%; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 header .logoSection .container .epmlText {
@@ -154,10 +173,18 @@ header .logoSection .container .epmlText {
     -ms-grid-row-align: center;
     display: grid;
     align-content: center;
-    max-height: 47%;
-    max-width: 47%;
-    align-self: center
+    align-self: center;
+    /* max-width: 40%; */
+    
+    /* width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
 }
+
+
 
 header .logoSection .container .loginLink {
     -ms-grid-column-align: end;
@@ -1404,7 +1431,7 @@ tr {
     position: relative
 }
 .insideMemberStaff .mitem .imgBox img {
-   /* object-fit: cover; */
+   object-fit: cover;
 }
 .insideMemberStaff .mitem .btnViewDetails {
     background-color: #0165ff;

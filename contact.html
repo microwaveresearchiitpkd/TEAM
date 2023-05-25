@@ -29,7 +29,7 @@
     <style>
         .grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr 2fr;
             gap: 20px;
         }
 
@@ -37,7 +37,7 @@
             text-align: left;
             font-size: 2rem;
             margin: 1rem 0rem;
-            color: #555;
+
         }
 
         .bodyhead {
@@ -50,26 +50,30 @@
         }
 
 
-        .para {
-            color: #555;
-        }
 
         .grid-item {
             width: 100%;
             height: auto;
-            margin-bottom: 3rem;
+            margin-bottom: 1rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            /* align-items: center; */
 
         }
 
         .grid-item img {
-            max-width: 60%;
+            width: 90%;
+            height: auto;
+            margin-bottom: 0.1rem;
+
+        }
+
+        .second {
+            text-align: left;
+            max-width: 100%;
             height: auto;
             margin-bottom: 1rem;
-
         }
 
         .imgsec {
@@ -83,6 +87,11 @@
             .grid {
                 grid-template-columns: 1fr;
             }
+
+            .grid-item div {
+                font-size: large;
+
+            }
         }
 
         hr {
@@ -95,6 +104,7 @@
         }
 
         .selectpub-item {
+            font-size: larger;
             list-style: none;
             margin-bottom: 1rem;
         }
@@ -293,19 +303,19 @@
         </div>
     </section>
     <div class="grey container">
-        <div class="grid" style="max-width: 70%;">
+        <div class="grid">
             <div class="grid-item">
                 <img src="imgs/sir.jpg" alt="">
             </div>
-            <div class="grid-item">
-                <div>
+            <div class="grid-item second">
+                <div class="inner">
                     <h2 class="head">Dr. Sukomal Dey</h2>
                     <ul class="selectpub">
                         <li class="selectpub-item para">Assistant Professor,</li>
                         <li class="selectpub-item para">Email Me: sdey28@iitpkd.ac.in</li>
                         <li class="selectpub-item para">Department of Electrical Engineering,</li>
                         <li class="selectpub-item para">Indian Institute of Technology Palakkad</li>
-                        <li class="selectpub-item para">Nila Campus, Kanjikode west, Indian IIT Palakkad - 678623 India
+                        <li class="selectpub-item para">Nila Campus, Kanjikode west, IIT Palakkad - 678623 India
                         </li>
                     </ul>
                 </div>
