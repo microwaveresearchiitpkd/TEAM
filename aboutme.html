@@ -32,14 +32,12 @@
             flex-wrap: wrap;
         }
 
-        .designations {
+        .designations li {
             font-size: 1.3rem;
-            line-height: 1.3rem;
+            line-height: 2rem;
         }
 
         .sec {
-            /* From https://css.glass */
-            /* From https://css.glass */
             background: rgba(255, 255, 255, 0.01);
             border-radius: 16px;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -102,15 +100,13 @@
         }
 
         .para {
-            text-align: left;
+            text-align: justify;
             font-size: medium;
             color: #555;
         }
 
         .interest {
             padding: 2%;
-            /* From https://css.glass */
-            /* From https://css.glass */
             background: rgba(255, 255, 255, 0.01);
             border-radius: 16px;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -163,6 +159,9 @@
 
 
         @media (max-width: 490px) {
+            .containerAbout img {
+                max-width: 80%;
+            }
 
             /* add a media query for screens smaller than 490 pixels wide */
             .containerAbout>div {
@@ -178,13 +177,15 @@
     <header>
         <section class="logoSection">
             <div class="container">
-                <div class="kgpLogo">
+                <div class="epmlLogo grid-item">
                     <a href="index.html"><img src="imgs/logo.png" class="img-fluid" alt=""></a>
                 </div>
-                <div class="epmlLogo">
-                    <a href="index.html"><img src="imgs/pkdlogo.png" class="img-fluid" alt=""></a> </div>
+                <div class="kgpLogo grid-item">
+                    <a href="index.html"><img src="imgs/pkdlogo.png" class="img-fluid" alt=""></a>
+                </div>
                 <div class="epmlText">
-                    <img src="imgs/header.png" class="img-fluid" alt=""> </div>
+                    <img src="imgs/header.png" class="img-fluid" alt="">
+                </div>
             </div>
         </section>
         <div class="container">

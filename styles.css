@@ -122,6 +122,13 @@ body {
 .container-fluid {
     padding-right: var(--bs-gutter-x, 0.75rem);
     padding-left: var(--bs-gutter-x, 0.75rem)
+} 
+.para {
+
+    line-height: 35px;
+    color: #555;
+    text-align: justify;
+
 }
 
 header .logoSection {
@@ -174,14 +181,6 @@ header .logoSection .container .epmlText {
     display: grid;
     align-content: center;
     align-self: center;
-    /* max-width: 40%; */
-    
-    /* width: 40%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
 }
 
 
@@ -215,8 +214,8 @@ header .logoSection .container .loginLink .btnUserLogin:hover {
     background: rgba(255, 255, 255, 0.401);
     border-radius: 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.7px);
-    -webkit-backdrop-filter: blur(5.7px);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
     border: 1px solid rgba(255, 255, 255, 0.34);
 
     box-shadow: 2px 6px 10px 0px rgba(22, 22, 26, 0.18); 
@@ -273,8 +272,8 @@ header .logoSection .container .loginLink .btnUserLogin:hover {
     background: rgba(255, 255, 255, 0.01);
     border-radius: 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.7px);
-    -webkit-backdrop-filter: blur(5.7px);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
     border: 1px solid rgba(255, 255, 255, 0.34);
     padding: 15px;
     margin-bottom: 3rem;
@@ -294,8 +293,8 @@ header .logoSection .container .loginLink .btnUserLogin:hover {
     background: rgba(255, 255, 255, 0.01);
     border-radius: 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.7px);
-    -webkit-backdrop-filter: blur(5.7px);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
     border: 1px solid rgba(255, 255, 255, 0.34);
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -323,7 +322,7 @@ header .logoSection .container .loginLink .btnUserLogin:hover {
 
 .aboutSection .desc p {
     margin-bottom: 10px;
-    text-align: left;
+    text-align: justify;
 }
 
 
@@ -355,8 +354,8 @@ header .logoSection .container .loginLink .btnUserLogin:hover {
     background: rgba(255, 255, 255, 0.01);
     border-radius: 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.7px);
-    -webkit-backdrop-filter: blur(5.7px);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
     border: 1px solid rgba(255, 255, 255, 0.34);
     margin: 2rem 0;
 }
@@ -538,14 +537,11 @@ header .logoSection .container .loginLink .btnUserLogin:hover {
     border-radius: 10px;
     font-size: 1.1rem;
     margin-bottom: 15px;
-    /* From https://css.glass */
-/* From https://css.glass */
-background: rgba(255, 255, 255, 0.1);
-
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(8.5px);
--webkit-backdrop-filter: blur(8.5px);
-border: 1px solid rgba(255, 255, 255, 0.34);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255, 255, 0.34);
 }
 
 .newsEpmlSection .newsSlider .item .card-heading {
@@ -562,7 +558,9 @@ border: 1px solid rgba(255, 255, 255, 0.34);
     min-height: 195px;
     position: relative
 }
+.newsEpmlSection .newsSlider .item .desc {
 
+}
 .newsEpmlSection .newsSlider .item .date {
     padding: 10px;
     color: #ea2f24;
@@ -702,13 +700,11 @@ border: 1px solid rgba(255, 255, 255, 0.34);
 
 .researchSection {
     padding: 70px 0px;
-   /* From https://css.glass */
-/* From https://css.glass */
-background: rgba(255, 255, 255, 0.01);
+    background: rgba(255, 255, 255, 0.01);
     border-radius: 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.7px);
-    -webkit-backdrop-filter: blur(5.7px);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
     border: 1px solid rgba(255, 255, 255, 0.34);
     margin-bottom: 2rem;
 }
@@ -869,8 +865,8 @@ background: rgba(255, 255, 255, 0.01);
     background: rgba(255, 255, 255, 0.01);
     border-radius: 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.7px);
-    -webkit-backdrop-filter: blur(5.7px);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
     border: 1px solid rgba(255, 255, 255, 0.34);
     margin-bottom: 2rem;
     height: 100%;
@@ -882,8 +878,8 @@ background: rgba(255, 255, 255, 0.01);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18) ;
     /* box-shadow: 2px 6px 10px 0px rgba(0, 229, 255, 0.22); */
-    backdrop-filter: blur(5.7px);
-    -webkit-backdrop-filter: blur(5.7px);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
     /* border: 1px solid rgb(0, 229, 255); */
 }
 
@@ -1415,7 +1411,7 @@ tr {
     border-radius: 3px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(1.7px);
-    -webkit-backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(3.7px);
     border: 1px solid rgba(255, 255, 255, 0.34);
     box-shadow: 2px 3px 5px 0px rgba(22, 22, 26, 0.05); 
 
