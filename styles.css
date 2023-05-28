@@ -138,12 +138,13 @@ header .logoSection {
 header .logoSection .container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 106px 65px 1fr;
-    grid-template-columns: 106px 65px 1fr;
+    -ms-grid-columns: 106px 75px 1fr;
+    grid-template-columns: 106px 75px 1fr;
     grid-gap: 5px;
     place-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
+    margin-bottom: 0PX;
     align-items: center
 }
 header .logoSection .container .kgpLogo {
@@ -152,28 +153,18 @@ header .logoSection .container .kgpLogo {
     align-items: center; 
 }
 
-header .logoSection .container .epmlText {
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center
-}
-
 @media screen and (max-width: 550px) {
     header .logoSection .container .kgpLogo {
-        max-width: 70%; 
+        max-width: 60%; 
         display: flex; 
         justify-content: center; 
         align-items: center; 
     }
     header .logoSection .container {
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: 106px 65px 1fr;
-        grid-template-columns: 106px 65px 1fr;
-        grid-gap: 20px;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center
+        -ms-grid-columns: 86px 45px 1fr;
+        grid-template-columns: 86px 45px 1fr;
+        grid-gap: 1px;
+      
     }
 }
 
