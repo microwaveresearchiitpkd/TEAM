@@ -130,8 +130,58 @@ body {
     text-align: justify;
 
 }
-
 header .logoSection {
+    background-color: #001e54;
+    padding: 8px 0px
+}
+
+header .logoSection .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 106px 65px 1fr;
+    grid-template-columns: 106px 65px 1fr;
+    grid-gap: 5px;
+    place-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+header .logoSection .container .kgpLogo {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+header .logoSection .container .epmlText {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center
+}
+
+@media screen and (max-width: 550px) {
+    header .logoSection .container .kgpLogo {
+        max-width: 70%; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+    }
+    header .logoSection .container {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 106px 65px 1fr;
+        grid-template-columns: 106px 65px 1fr;
+        grid-gap: 20px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+}
+
+.logo-a{
+    margin: 0px;
+}
+
+/* header .logoSection {
     background-color: #001e54;
     padding: 8px 0px
 }
@@ -140,8 +190,8 @@ header .logoSection {
 header .logoSection .container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 65px 70px 1fr;
-    grid-template-columns: 65px 70px 1fr;
+    -ms-grid-columns: 80px 70px 1fr;
+    grid-template-columns: 80px 70px 1fr;
     grid-gap: 10px;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -164,8 +214,7 @@ header .logoSection .container .kgpLogo {
 header .logoSection .container .epmlLogo {
     display: grid;
     align-content: center;
-    /* align-self: center;
-    max-width: 90%; */
+
     width: 100%;
     height: auto;
     display: flex;
@@ -181,7 +230,7 @@ header .logoSection .container .epmlText {
     display: grid;
     align-content: center;
     align-self: center;
-}
+} */
 
 
 
@@ -696,6 +745,29 @@ header .logoSection .container .loginLink .btnUserLogin:hover {
 .eventAnnoucement .annoucementItem ul li a {
     color: #043785;
     text-decoration: none
+}
+
+.research-facilities div h3{
+    color: #000;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.facilites{
+    width: 300px;
+    height: 167px;
+    overflow: hidden;
+    border-radius: 7px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.18);
+    border: 4px solid rgba(255, 255, 255);
+    margin-bottom: 1rem;
+
+}
+.facilites img{
+    border-radius: 7px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .researchSection {
