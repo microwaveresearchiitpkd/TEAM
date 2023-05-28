@@ -250,7 +250,7 @@ header .logoSection .container .loginLink .btnUserLogin:hover {
 }
 
 .nav-container {
-    max-width: 90%;
+    max-width: 95%;
     padding-right: var(--bs-gutter-x, 0.75rem);
     padding-left: var(--bs-gutter-x, 0.75rem);
     margin: 0px auto
