@@ -140,7 +140,7 @@ header .logoSection .container {
     display: grid;
     -ms-grid-columns: 106px 75px 1fr;
     grid-template-columns: 106px 75px 1fr;
-    grid-gap: 5px;
+    grid-gap: 10px;
     place-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -247,6 +247,22 @@ header .logoSection .container .loginLink .btnUserLogin {
 header .logoSection .container .loginLink .btnUserLogin:hover {
     background-color: #fff;
     color: #001e54;
+}
+
+.nav-container {
+    max-width: 90%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin: 0px auto
+}
+
+@media screen and (max-width: 720px) {
+    .nav-container {
+        max-width: 100%;
+        padding-right: var(--bs-gutter-x, 0.75rem);
+        padding-left: var(--bs-gutter-x, 0.75rem);
+        margin: 0px auto
+    }
 }
 
 
