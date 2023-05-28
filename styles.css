@@ -1477,7 +1477,7 @@ tr {
     display: -ms-grid;
     display: grid;
     /* -ms-grid-columns: (1fr)[4]; */
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 25px;
     margin-bottom: 3rem;
     font-size: 0.9rem
@@ -1486,16 +1486,24 @@ tr {
 .insideMemberStaff .mitem {
     background: rgba(255, 255, 255, 0.101);
     border-radius: 3px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.17);
     backdrop-filter: blur(1.7px);
     -webkit-backdrop-filter: blur(3.7px);
-    border: 1px solid rgba(255, 255, 255, 0.34);
+    border: 1px solid rgba(199, 199, 199, 0.34);
     box-shadow: 2px 3px 5px 0px rgba(22, 22, 26, 0.05); 
-
-    border-radius: 10px;
     padding: 15px;
     -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
-    box-shadow: 2px 6px 8px 0px rgba(22, 22, 26, 0.18);
+
+}
+.insideMemberStaff .mitem h5 {
+    color: #101010;
+    font-weight: bold;
+    font-size: 1.2rem
+}
+.insideMemberStaff .mitem h5 p {
+    color: #555;
+    margin: 5px 0px ;
+    font-size: 0.9rem
 }
 .insideMemberStaff .mitem .imgBox {
     /* overflow: hidden; */
@@ -1524,11 +1532,7 @@ tr {
     margin-top: 5px
 }
 
-.insideMemberStaff .mitem h5 {
-    color: #ff5500;
-    font-weight: bold;
-    font-size: 1.2rem
-}
+
 
 .insideMemberStaff .mitem:hover .btnViewDetails {
     opacity: 100
