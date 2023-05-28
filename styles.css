@@ -1484,8 +1484,6 @@ tr {
 }
 
 .insideMemberStaff .mitem {
-    /* background-color: white; */
-
     background: rgba(255, 255, 255, 0.101);
     border-radius: 3px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -1499,9 +1497,7 @@ tr {
     -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
     box-shadow: 2px 6px 8px 0px rgba(22, 22, 26, 0.18);
 }
-
 .insideMemberStaff .mitem .imgBox {
-
     /* overflow: hidden; */
     position: relative
 }
@@ -1529,7 +1525,8 @@ tr {
 }
 
 .insideMemberStaff .mitem h5 {
-    margin-top: 20px;
+    color: #ff5500;
+    font-weight: bold;
     font-size: 1.2rem
 }
 
