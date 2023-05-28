@@ -1478,7 +1478,7 @@ tr {
     display: -ms-grid;
     display: grid;
     /* -ms-grid-columns: (1fr)[4]; */
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 25px;
     margin-bottom: 3rem;
     font-size: 0.9rem

@@ -29,6 +29,17 @@
         href="http://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cDovL3d3dy5mYWN3ZWIuaWl0a2dwLmFjLmluL35za2FwYXQv" />
 
     <style>
+        .insideMemberStaff {
+            margin-top: 50px;
+            display: -ms-grid;
+            display: grid;
+            /* -ms-grid-columns: (1fr)[4]; */
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 25px;
+            margin-bottom: 3rem;
+            font-size: 0.9rem
+        }
+
         hr {
             margin-top: 0.5rem;
             position: relative;
@@ -36,6 +47,21 @@
             height: 2px;
             background: rgb(255, 225, 0);
 
+        }
+
+        .hrule {
+            margin-top: 0.3rem;
+            margin-bottom: 0.3rem;
+            position: relative;
+            border: none;
+            height: 0.05rem;
+            background: #000;
+            /* background: rgb(255, 255, 0); */
+
+        }
+
+        .para {
+            line-height: 15px;
         }
     </style>
 
